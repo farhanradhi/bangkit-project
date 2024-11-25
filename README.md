@@ -1,1 +1,2 @@
-repo for cloud computing bangkit project Sampahin
+# Sampahin 
+project for bangkit capstone
