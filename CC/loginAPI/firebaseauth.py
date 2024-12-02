@@ -1,130 +1,122 @@
-import requests
-from firebase_admin import credentials, initialize_app, firestore
 from flask import Flask, request, jsonify
+import firebase_admin
+from firebase_admin import credentials, auth, firestore
+from werkzeug.security import generate_password_hash, check_password_hash
+import jwt
+import datetime
+import os
 
-# Inisialisasi Firebase Admin SDK
-cred = credentials.Certificate("firebase_auth.json")  # Path ke file JSON Firebase Admin SDK
-initialize_app(cred)
-
-# Firestore database
-db = firestore.client()
-
+# Inisialisasi Flask
 app = Flask(__name__)
 
-# Ganti dengan API key Firebase Anda
-FIREBASE_API_KEY = "firebase_auth.json"
+# Inisialisasi Firebase
+cred = credentials.Certificate("#####") #Path ke Credentials untuk Firebase Authentication
+firebase_admin.initialize_app(cred)
+db = firestore.client()
 
-@app.route('/register-email', methods=['POST'])
-def register_email():
-    """
-    Endpoint untuk register pengguna menggunakan email dan password.
-    """
+# Secret Key untuk JWT
+SECRET_KEY = "ur_sercet_keys"  # Ganti dengan key aman
+
+
+# Helper Function: Hashing dan Verifikasi Password
+def hash_password(password):
+    return generate_password_hash(password)
+
+
+def verify_password(hashed_password, plain_password):
+    return check_password_hash(hashed_password, plain_password)
+
+
+# API Register
+@app.route('/register', methods=['POST'])
+def register():
     try:
-        data = request.get_json()
-        email = data['email']
-        password = data['password']
-        name = data.get('name', 'No name provided')
-
-        # Endpoint Firebase REST API untuk register
-        url = f"https://identitytoolkit.googleapis.com/v1/accounts:signUp?key={FIREBASE_API_KEY}"
-        payload = {
-            "email": email,
-            "password": password,
-            "returnSecureToken": True
-        }
-        response = requests.post(url, json=payload)
-
-        if response.status_code == 200:
-            user_data = response.json()
-            uid = user_data['localId']
-
-            # Simpan data pengguna di Firestore
-            user_ref = db.collection('users').document(uid)
-            user_ref.set({
-                'uid': uid,
-                'email': email,
-                'name': name
-            })
-
-            return jsonify({"message": "User registered successfully", "user": user_data}), 201
-        else:
-            return jsonify({"error": response.json()}), response.status_code
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 400
-
-
-@app.route('/login-email', methods=['POST'])
-def login_email():
-    """
-    Endpoint untuk login pengguna menggunakan email dan password.
-    """
-    try:
-        data = request.get_json()
+        data = request.json
         email = data['email']
         password = data['password']
 
-        # Endpoint Firebase REST API untuk login
-        url = f"https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key={FIREBASE_API_KEY}"
-        payload = {
-            "email": email,
-            "password": password,
-            "returnSecureToken": True
-        }
-        response = requests.post(url, json=payload)
+        # Cek apakah email sudah digunakan
+        user_query = db.collection('users').where('email', '==', email).get()
+        if user_query:
+            return jsonify({'error': 'Email sudah digunakan.'}), 400
 
-        if response.status_code == 200:
-            user_data = response.json()
-            uid = user_data['localId']
+        # Hash password sebelum disimpan
+        hashed_password = hash_password(password)
 
-            # Ambil data pengguna dari Firestore
-            user_ref = db.collection('users').document(uid)
-            user_doc = user_ref.get()
+        # Simpan user ke Firestore
+        user_ref = db.collection('users').document()
+        user_ref.set({
+            'email': email,
+            'password': hashed_password,
+            'created_at': datetime.datetime.now()
+        })
 
-            if user_doc.exists():
-                return jsonify({"message": "User logged in successfully", "user": user_doc.to_dict()}), 200
-            else:
-                return jsonify({"message": "User does not exist in Firestore"}), 404
-        else:
-            # Jika login gagal (email/password salah)
-            error_message = response.json().get('error', {}).get('message', 'Email atau Password yang dimasukan salah')
-            return jsonify({"error": f"Login failed: {error_message}"}), 401
+        # Buat JWT token
+        token = jwt.encode({'email': email, 'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)}, SECRET_KEY)
 
+        return jsonify({'message': 'Registrasi berhasil.', 'token': token}), 201
     except Exception as e:
-        return jsonify({"error": str(e)}), 400
+        return jsonify({'error': str(e)}), 500
 
 
-@app.route('/login-google', methods=['POST'])
-def login_google():
-    """
-    Endpoint untuk login/register pengguna menggunakan Google ID token.
-    """
+# API Login
+@app.route('/login', methods=['POST'])
+def login():
     try:
-        data = request.get_json()
+        data = request.json
+        email = data['email']
+        password = data['password']
+
+        # Ambil user berdasarkan email
+        user_query = db.collection('users').where('email', '==', email).get()
+        if not user_query:
+            return jsonify({'error': 'Email tidak ditemukan.'}), 404
+
+        # Ambil data user
+        user_data = user_query[0].to_dict()
+
+        # Verifikasi password
+        if not verify_password(user_data['password'], password):
+            return jsonify({'error': 'Password salah.'}), 401
+
+        # Buat JWT token
+        token = jwt.encode({'email': email, 'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)}, SECRET_KEY)
+
+        return jsonify({'message': 'Login berhasil.', 'token': token}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+# API Login Google
+@app.route('/google-login', methods=['POST'])
+def google_login():
+    try:
+        data = request.json
         id_token = data['id_token']
 
-        # Verifikasi ID token dengan Firebase Admin SDK
+        # Verifikasi Google ID Token
         decoded_token = auth.verify_id_token(id_token)
-        uid = decoded_token['uid']
+        email = decoded_token['email']
 
-        # Ambil data pengguna dari Firestore
-        user_ref = db.collection('users').document(uid)
-        user = user_ref.get()
-
-        if user.exists:
-            return jsonify({"message": "User logged in successfully", "user": user.to_dict()}), 200
-        else:
-            # Jika pengguna baru, daftar mereka
+        # Periksa apakah user sudah terdaftar
+        user_query = db.collection('users').where('email', '==', email).get()
+        if not user_query:
+            # Jika belum, daftar user baru
+            user_ref = db.collection('users').document()
             user_ref.set({
-                'uid': uid,
-                'email': decoded_token['email'],
-                'name': decoded_token.get('name', 'No name provided'),
+                'email': email,
+                'created_at': datetime.datetime.now()
             })
-            return jsonify({"message": "User registered successfully", "user": decoded_token}), 201
+
+        # Buat JWT token
+        token = jwt.encode({'email': email, 'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)}, SECRET_KEY)
+
+        return jsonify({'message': 'Login Google berhasil.', 'token': token}), 200
     except Exception as e:
-        return jsonify({"error": str(e)}), 400
+        return jsonify({'error': str(e)}), 500
 
 
+# Main Function untuk Cloud Run
 if __name__ == '__main__':
-    app.run(debug=True)
-
+    port = int(os.environ.get("PORT", 8080))  # Default ke 8080 jika PORT tidak disetel
+    app.run(host='0.0.0.0', port=port)  # Dengarkan pada semua alamat (host 0.0.0.0)
