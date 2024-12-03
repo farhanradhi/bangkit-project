@@ -10,12 +10,12 @@ import os
 app = Flask(__name__)
 
 # Inisialisasi Firebase
-cred = credentials.Certificate("#####") #Path ke Credentials untuk Firebase Authentication
+cred = credentials.Certificate("firebaseauth.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 # Secret Key untuk JWT
-SECRET_KEY = "ur_sercet_keys"  # Ganti dengan key aman
+SECRET_KEY = "sampahinkiputfarhan"  # Ganti dengan key aman
 
 
 # Helper Function: Hashing dan Verifikasi Password
@@ -27,18 +27,23 @@ def verify_password(hashed_password, plain_password):
     return check_password_hash(hashed_password, plain_password)
 
 
-# API Register
+# API Register (Email, Username, Password)
 @app.route('/register', methods=['POST'])
 def register():
     try:
         data = request.json
         email = data['email']
+        username = data['username']
         password = data['password']
 
-        # Cek apakah email sudah digunakan
-        user_query = db.collection('users').where('email', '==', email).get()
-        if user_query:
+        # Cek apakah email atau username sudah digunakan
+        email_query = db.collection('users').where('email', '==', email).get()
+        username_query = db.collection('users').where('username', '==', username).get()
+
+        if email_query:
             return jsonify({'error': 'Email sudah digunakan.'}), 400
+        if username_query:
+            return jsonify({'error': 'Username sudah digunakan.'}), 400
 
         # Hash password sebelum disimpan
         hashed_password = hash_password(password)
@@ -47,30 +52,34 @@ def register():
         user_ref = db.collection('users').document()
         user_ref.set({
             'email': email,
+            'username': username,
             'password': hashed_password,
             'created_at': datetime.datetime.now()
         })
 
         # Buat JWT token
-        token = jwt.encode({'email': email, 'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)}, SECRET_KEY)
+        token = jwt.encode({'email': email, 'username': username, 'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)}, SECRET_KEY)
 
         return jsonify({'message': 'Registrasi berhasil.', 'token': token}), 201
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
 
-# API Login
+# API Login (Email/Username dan Password)
 @app.route('/login', methods=['POST'])
 def login():
     try:
         data = request.json
-        email = data['email']
+        login_id = data['login_id']  # Bisa berupa email atau username
         password = data['password']
 
-        # Ambil user berdasarkan email
-        user_query = db.collection('users').where('email', '==', email).get()
+        # Cari user berdasarkan email atau username
+        user_query = db.collection('users').where('email', '==', login_id).get()
         if not user_query:
-            return jsonify({'error': 'Email tidak ditemukan.'}), 404
+            user_query = db.collection('users').where('username', '==', login_id).get()
+
+        if not user_query:
+            return jsonify({'error': 'Email atau username tidak ditemukan.'}), 404
 
         # Ambil data user
         user_data = user_query[0].to_dict()
@@ -80,38 +89,9 @@ def login():
             return jsonify({'error': 'Password salah.'}), 401
 
         # Buat JWT token
-        token = jwt.encode({'email': email, 'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)}, SECRET_KEY)
+        token = jwt.encode({'email': user_data['email'], 'username': user_data['username'], 'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)}, SECRET_KEY)
 
         return jsonify({'message': 'Login berhasil.', 'token': token}), 200
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
-
-
-# API Login Google
-@app.route('/google-login', methods=['POST'])
-def google_login():
-    try:
-        data = request.json
-        id_token = data['id_token']
-
-        # Verifikasi Google ID Token
-        decoded_token = auth.verify_id_token(id_token)
-        email = decoded_token['email']
-
-        # Periksa apakah user sudah terdaftar
-        user_query = db.collection('users').where('email', '==', email).get()
-        if not user_query:
-            # Jika belum, daftar user baru
-            user_ref = db.collection('users').document()
-            user_ref.set({
-                'email': email,
-                'created_at': datetime.datetime.now()
-            })
-
-        # Buat JWT token
-        token = jwt.encode({'email': email, 'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)}, SECRET_KEY)
-
-        return jsonify({'message': 'Login Google berhasil.', 'token': token}), 200
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
