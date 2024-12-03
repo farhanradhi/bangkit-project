@@ -65,21 +65,18 @@ def register():
         return jsonify({'error': str(e)}), 500
 
 
-# API Login (Email/Username dan Password)
+# API Login (Email dan Password)
 @app.route('/login', methods=['POST'])
 def login():
     try:
         data = request.json
-        login_id = data['login_id']  # Bisa berupa email atau username
+        email = data['email']
         password = data['password']
 
-        # Cari user berdasarkan email atau username
-        user_query = db.collection('users').where('email', '==', login_id).get()
+        # Cari user berdasarkan email
+        user_query = db.collection('users').where('email', '==', email).get()
         if not user_query:
-            user_query = db.collection('users').where('username', '==', login_id).get()
-
-        if not user_query:
-            return jsonify({'error': 'Email atau username tidak ditemukan.'}), 404
+            return jsonify({'error': 'Email tidak ditemukan.'}), 404
 
         # Ambil data user
         user_data = user_query[0].to_dict()
@@ -91,7 +88,12 @@ def login():
         # Buat JWT token
         token = jwt.encode({'email': user_data['email'], 'username': user_data['username'], 'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)}, SECRET_KEY)
 
-        return jsonify({'message': 'Login berhasil.', 'token': token}), 200
+        return jsonify({
+            'message': 'Login berhasil.',
+            'username': user_data['username'],
+            'email': user_data['email'],
+            'token': token
+        }), 200
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
