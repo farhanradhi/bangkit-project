@@ -53,6 +53,11 @@ def predict():
     file = request.files['file']
     if file.filename == '':
         return jsonify({'error': 'No selected file'}), 400
+
+    # Validasi ekstensi file
+    ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png'}
+    if not ('.' in file.filename and file.filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS):
+        return jsonify({'error': 'File type not allowed. Please upload a file with .jpg, .jpeg, or .png extension.'}), 400
     
     # Membaca file gambar yang diupload
     img = Image.open(io.BytesIO(file.read()))  # Membaca gambar dari file yang diupload
@@ -85,3 +90,5 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
+
+
