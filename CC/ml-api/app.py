@@ -40,6 +40,7 @@ def upload_to_gcs(image, bucket_name, destination_blob_name):
     return f"gs://{bucket_name}/{destination_blob_name}"
 
 # Endpoint untuk prediksi
+# Endpoint untuk prediksi
 @app.route('/predict', methods=['POST'])
 def predict():
     if 'file' not in request.files:
@@ -67,12 +68,17 @@ def predict():
         predicted_class = class_names[predicted_class_index]
 
     # Simpan gambar hasil prediksi ke GCS
-    bucket_name = ''  # Ganti dengan nama bucket kamu
+    bucket_name = 'sampahin_ml_datasets'  # Ganti dengan nama bucket kamu
     destination_blob_name = f'predicted_images/{file.filename}'
     image_url = upload_to_gcs(img, bucket_name, destination_blob_name)
 
-    # Hasil prediksi
+    # Buat ID unik untuk Firestore
+    prediction_ref = db.collection('predictions').document()  # Generate ID unik
+    prediction_id = prediction_ref.id  # Ambil ID yang dihasilkan
+
+    # Data hasil prediksi
     result = {
+        'id': prediction_id,  # Tambahkan ID ke data
         'predicted_class': predicted_class,
         'confidence': confidence,
         'image_url': image_url,
@@ -80,14 +86,16 @@ def predict():
     }
 
     # Simpan hasil ke Firestore
-    db.collection('predictions').add(result)
+    prediction_ref.set(result)  # Menggunakan set() untuk menyimpan data
 
     return jsonify({
+        'id': prediction_id,  # Kembalikan ID ke response
         'predicted_class': result['predicted_class'],
         'confidence': result['confidence'],
         'image_url': result['image_url'],
         'timestamp': result['timestamp'].isoformat()
     })
+
 
 # Endpoint untuk mengambil histori prediksi
 @app.route('/history', methods=['GET'])
@@ -109,6 +117,7 @@ def get_history():
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
+
 
 
 
