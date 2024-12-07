@@ -12,57 +12,60 @@ def find_places():
     # Ambil data JSON dari request body
     data = request.get_json()
     
-    user_address = data.get('address')  # Dapatkan alamat dari input JSON
-    user_lat = data.get('lat')          # Dapatkan latitude dari input JSON
-    user_lng = data.get('lng')          # Dapatkan longitude dari input JSON
-    radius = data.get('radius', 5000)   # Radius default 5000 meter jika tidak diberikan
+    # Ambil alamat dan lokasi (lat, lng) dari input JSON
+    user_address = data.get('address')
+    user_lat = data.get('lat')
+    user_lng = data.get('lng')
+    radius = data.get('radius', 5000)  # Default radius 5000 meter jika tidak diberikan
     
-    if not user_address and (not user_lat or not user_lng):
-        return jsonify({"error": "Alamat atau koordinat (lat, lng) harus diberikan."}), 400
-
-    # Menggunakan Geocoding untuk mengubah alamat menjadi koordinat (latitude dan longitude)
+    # Tentukan lokasi berdasarkan input
     if user_address:
+        # Jika ada alamat, lakukan geocoding
         geocode_result = gmaps.geocode(user_address)
         if not geocode_result:
             return jsonify({"error": "Alamat tidak valid."}), 400
         location = geocode_result[0]['geometry']['location']
         user_lat = location['lat']
         user_lng = location['lng']
+    
+    if not user_lat or not user_lng:
+        return jsonify({"error": "Lokasi tidak ditemukan."}), 400
 
-    # Kata kunci yang lebih relevan untuk tempat pembuangan sampah atau pengolahan sampah
+    # Daftar kata kunci untuk pencarian tempat yang relevan
     keywords = ['waste disposal', 'recycling center', 'garbage dump', 'waste management', 'landfill']
-
-    # Membuat list hasil pencarian
+    
+    # Array untuk menampung hasil pencarian
     results = []
     
     for keyword in keywords:
-        # Pencarian tempat berdasarkan kata kunci
+        # Pencarian tempat berdasarkan kata kunci dan radius
         places = gmaps.places_nearby(
             location=(user_lat, user_lng),
             radius=radius,
             keyword=keyword,
             type='point_of_interest'  # Menyaring hasil berdasarkan kategori point of interest
         )
-
+        
         for place in places.get('results', []):
-            # Menambahkan hasil yang relevan ke dalam list, hanya menampilkan nama dan lokasi
             results.append({
-                'address': place.get('vicinity', 'No address'),  # Alamat tempat
-                'location': place['geometry']['location'],  # Lokasi dalam lat, lng
-                'name': place['name'],  # Nama tempat
+                "name": place['name'],
+                "address": place.get('vicinity', 'No address'),
+                "location": place['geometry']['location']
             })
     
-    # Menghapus duplikasi tempat jika ada
+    # Hapus duplikasi tempat berdasarkan kombinasi nama dan alamat
     unique_results = []
     seen_places = set()
-    
     for result in results:
-        place_id = result['name'] + str(result['location'])
+        place_id = result['name'] + result['address']
         if place_id not in seen_places:
             seen_places.add(place_id)
             unique_results.append(result)
-
-    return jsonify(unique_results)
+    
+    # Return hasil dalam format yang diinginkan
+    return jsonify({
+        "MapsResponses": unique_results
+    })
 
 # Main Function untuk Cloud Run
 if __name__ == '__main__':
