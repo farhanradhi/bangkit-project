@@ -68,7 +68,7 @@ def predict():
         predicted_class = class_names[predicted_class_index]
 
     # Simpan gambar hasil prediksi ke GCS
-    bucket_name = 'sampahin_ml_datasets'  # Ganti dengan nama bucket kamu
+    bucket_name = ''  # Ganti dengan nama bucket kamu
     destination_blob_name = f'predicted_images/{file.filename}'
     image_url = upload_to_gcs(img, bucket_name, destination_blob_name)
 
