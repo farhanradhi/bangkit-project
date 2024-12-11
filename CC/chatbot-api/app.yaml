@@ -1,9 +1,9 @@
-runtime: python311  # Menggunakan Python 3.11
+runtime: python311  
 entrypoint: gunicorn -b :$PORT app:app
 service: chatbot-be
-instance_class: F2  # Ukuran instance, bisa disesuaikan
+instance_class: F2  
 
-# Pengaturan untuk Google Cloud Storage
+
 env_variables:
   GOOGLE_CLOUD_PROJECT: 
   BUCKET_NAME: 
