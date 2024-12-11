@@ -1,0 +1,15 @@
+runtime: python311  # Menggunakan Python 3.11
+entrypoint: gunicorn -b :$PORT app:app
+service: chatbot-be
+instance_class: F2  # Ukuran instance, bisa disesuaikan
+
+# Pengaturan untuk Google Cloud Storage
+env_variables:
+  GOOGLE_CLOUD_PROJECT: sampahin
+  BUCKET_NAME: sampahin_ml_datasets
+  GOOGLE_APPLICATION_CREDENTIALS: "storageadmin.json"
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 1
+  max_instances: 3
