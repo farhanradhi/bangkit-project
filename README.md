@@ -25,7 +25,6 @@ The app offers a seamless experience by combining machine learning algorithms fo
 
 ## Cloud Architecture
 ![CC_Documentatio](https://github.com/user-attachments/assets/296177d0-9b72-47a6-9ee8-8bedd1bc8847)
-
 ![CC_FLowchart_1](https://github.com/user-attachments/assets/d4e0e124-80a3-461f-a6ed-d6b6473581e8)
 
 
