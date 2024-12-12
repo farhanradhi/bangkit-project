@@ -46,6 +46,9 @@ https://drive.google.com/drive/folders/1nRz7Sqkti9eAbrcqpkzcmRBbWWzm_JZM?usp=dri
 ### Building model
 After the model is trained and achieves good results, the model will be saved as an .h5 file to be used as a Flask API, which will later be implemented in the detection application.
 
+### Building Chatbot Rule-based
+We use a CSV file containing pre-made questions, topics, and answers. The chatbot will provide responses based on the keywords and topics entered by the user.
+
 ## Setup Installation in Google Cloud Platform
 
 1. open Google Cloud Console. you can open Google cloud console via link : https://console.cloud.google.com
