@@ -96,3 +96,6 @@ We use a CSV file containing pre-made questions, topics, and answers. The chatbo
 
 ## Demo Video
 To see the Sampah.In video demo, you can see at https://drive.google.com/file/d/1YGbMBPisB7ceFMK9gdbn3iHdSGSi6obN/view
+
+## API Documentation
+To understand more about how our API works, you can check at https://docs.google.com/document/d/12HoHfHde_-0tBCT_ziI0iyxveJaE0zJmN1WxK4rJ9DY/edit?usp=sharing
