@@ -9,13 +9,34 @@
         android:id="@+id/navigation_home"
         android:name="com.capstone.sampahin.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_maps"
+            app:destination="@id/navigation_maps" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_maps2"
+            app:destination="@id/navigation_maps" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_chat"
         android:name="com.capstone.sampahin.ui.chat.ChatFragment"
         android:label="@string/chat"
-        tools:layout="@layout/fragment_chat" />
+        tools:layout="@layout/fragment_chat" >
+        <argument
+            android:name="topicTitle"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_topics"
+        android:name="com.capstone.sampahin.ui.chat.TopicsFragment"
+        android:label="Topic Questions"
+        tools:layout="@layout/fragment_topics" >
+        <action
+            android:id="@+id/action_topicsFragment_to_chatFragment"
+            app:destination="@id/navigation_chat" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_maps"
@@ -27,7 +48,17 @@
         android:id="@+id/navigation_scan"
         android:name="com.capstone.sampahin.ui.scan.ScanFragment"
         android:label="@string/scan"
-        tools:layout="@layout/fragment_scan" />
+        tools:layout="@layout/fragment_scan" >
+        <action
+            android:id="@+id/action_navigation_scan_to_navigation_topics"
+            app:destination="@id/navigation_topics" />
+        <action
+            android:id="@+id/action_navigation_scan_to_navigation_chat"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_navigation_scan_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
 
 
     <fragment

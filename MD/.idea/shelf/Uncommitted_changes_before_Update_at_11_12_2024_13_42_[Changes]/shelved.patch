@@ -1,0 +1,36 @@
+Index: app/src/main/java/com/capstone/sampahin/ui/chat/DatasetClient.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.capstone.sampahin.ui.chat\r\n\r\nimport android.content.Context\r\nimport android.util.Log\r\nimport com.google.gson.Gson\r\nimport com.google.gson.reflect.TypeToken\r\nimport java.io.IOException\r\nimport java.io.InputStream\r\n\r\n/**\r\n *  DatasetClient not used anymore in this project cause the data has been moved to the server\r\n *  Keep this class for reference local JSON parsing\r\n *  */\r\n\r\nclass DatasetClient(private val context: Context) {\r\n    private companion object {\r\n        private const val TAG = \"SampahInApp\"\r\n        private const val JSON_DIR = \"topics.json\"\r\n    }\r\n\r\n    fun loadJsonData(): Topics? {\r\n        var dataSet: Topics? = null\r\n        try {\r\n            val inputStream: InputStream = context.assets.open(JSON_DIR)\r\n            val bufferReader = inputStream.bufferedReader()\r\n            val stringJson: String = bufferReader.use { it.readText() }\r\n            val datasetType = object : TypeToken<Topics>() {}.type\r\n            dataSet = Gson().fromJson(stringJson, datasetType)\r\n        } catch (e: IOException) {\r\n            Log.e(TAG, e.message.toString())\r\n        }\r\n        return dataSet\r\n    }\r\n}
+===================================================================
+diff --git a/app/src/main/java/com/capstone/sampahin/ui/chat/DatasetClient.kt b/app/src/main/java/com/capstone/sampahin/ui/chat/DatasetClient.kt
+--- a/app/src/main/java/com/capstone/sampahin/ui/chat/DatasetClient.kt	(revision b4960080242fdbb3f24aac999735448a28bc0f7f)
++++ b/app/src/main/java/com/capstone/sampahin/ui/chat/DatasetClient.kt	(date 1733840971691)
+@@ -8,7 +8,7 @@
+ import java.io.InputStream
+ 
+ /**
+- *  DatasetClient not used anymore in this project cause the data has been moved to the server
++ *  DatasetClient class is not used anymore in this project cause the data has been moved to the server
+  *  Keep this class for reference local JSON parsing
+  *  */
+ 
+Index: app/src/main/java/com/capstone/sampahin/ui/chat/BertHelper.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.capstone.sampahin.ui.chat\r\n\r\nimport android.content.Context\r\nimport android.os.Build\r\nimport android.util.Log\r\nimport org.tensorflow.lite.gpu.CompatibilityList\r\nimport org.tensorflow.lite.task.core.BaseOptions\r\nimport org.tensorflow.lite.task.text.qa.BertQuestionAnswerer\r\nimport org.tensorflow.lite.task.text.qa.QaAnswer\r\n\r\nclass BertHelper(\r\n    val context: Context,\r\n    private val resultAnswerListener: ResultAnswerListener?\r\n) {\r\n    private var bertQuestionAnswerer: BertQuestionAnswerer? = null\r\n\r\n    fun clearBertQuestionAnswerer() {\r\n        bertQuestionAnswerer?.close()\r\n        bertQuestionAnswerer = null\r\n    }\r\n\r\n    private fun setupBertQuestionAnswerer() {\r\n\r\n        val baseOptionsBuilder = BaseOptions.builder()\r\n\r\n        if (CompatibilityList().isDelegateSupportedOnThisDevice) {\r\n            baseOptionsBuilder.useGpu()\r\n        } else if (Build.VERSION.SDK_INT >= 27) {\r\n            baseOptionsBuilder.useNnapi()\r\n        } else {\r\n            baseOptionsBuilder.setNumThreads(4)\r\n        }\r\n\r\n        val options = BertQuestionAnswerer.BertQuestionAnswererOptions.builder()\r\n            .setBaseOptions(baseOptionsBuilder.build())\r\n            .build()\r\n\r\n        try {\r\n            bertQuestionAnswerer =\r\n                BertQuestionAnswerer.createFromFileAndOptions(context, BERT_QA_MODEL, options)\r\n        } catch (e: IllegalStateException) {\r\n            resultAnswerListener\r\n                ?.onError(\"Bert Question Answerer gagal untuk terinisialisasi\")\r\n            Log.e(TAG, \"TFLite gagal untuk load model dengan error: \" + e.message)\r\n        }\r\n\r\n    }\r\n\r\n    fun getQuestionAnswer(topicsContent: String, question: String) {\r\n        if (bertQuestionAnswerer == null) {\r\n            setupBertQuestionAnswerer()\r\n        }\r\n\r\n        var inferenceTime = System.currentTimeMillis()\r\n\r\n        val answers = bertQuestionAnswerer?.answer(topicsContent, question)\r\n\r\n        inferenceTime = System.currentTimeMillis() - inferenceTime\r\n\r\n        resultAnswerListener?.onResults(answers, inferenceTime)\r\n    }\r\n\r\n    interface ResultAnswerListener {\r\n        fun onError(error: String)\r\n        fun onResults(\r\n            results: List<QaAnswer>?,\r\n            inferenceTime: Long\r\n        )\r\n    }\r\n\r\n    companion object {\r\n        private const val BERT_QA_MODEL = \"mobilebert.tflite\"\r\n        private const val TAG = \"BertQaHelper\"\r\n    }\r\n}
+===================================================================
+diff --git a/app/src/main/java/com/capstone/sampahin/ui/chat/BertHelper.kt b/app/src/main/java/com/capstone/sampahin/ui/chat/BertHelper.kt
+--- a/app/src/main/java/com/capstone/sampahin/ui/chat/BertHelper.kt	(revision b4960080242fdbb3f24aac999735448a28bc0f7f)
++++ b/app/src/main/java/com/capstone/sampahin/ui/chat/BertHelper.kt	(date 1733840971640)
+@@ -8,6 +8,10 @@
+ import org.tensorflow.lite.task.text.qa.BertQuestionAnswerer
+ import org.tensorflow.lite.task.text.qa.QaAnswer
+ 
++/**
++ *  BertHelper class is not used anymore in this project cause the data has been moved to the server
++ *  Keep this class for reference local JSON parsing
++ */
+ class BertHelper(
+     val context: Context,
+     private val resultAnswerListener: ResultAnswerListener?

@@ -1,15 +1,12 @@
 package com.capstone.sampahin.ui
 
-import android.content.ContentValues
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.graphics.drawable.Drawable
 import android.net.Uri
-import android.os.Build
-import android.os.Environment
-import android.provider.MediaStore
-import android.provider.MediaStore.Audio.Media
-import androidx.core.content.FileProvider
+import androidx.core.content.ContextCompat
+import com.capstone.sampahin.R
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
@@ -21,33 +18,6 @@ import java.util.Locale
 private const val FILENAME_FORMAT = "yyyyMMdd_HHmmss"
 private const val MAXIMAL_SIZE = 1000000
 private val timeStamp : String = SimpleDateFormat(FILENAME_FORMAT, Locale.US).format(Date())
-
-fun getImageUri(context: Context): Uri {
-    var uri: Uri? = null
-    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-        val contentValues = ContentValues().apply {
-            put(MediaStore.MediaColumns.DISPLAY_NAME, "$timeStamp.jpg")
-            put(MediaStore.MediaColumns.MIME_TYPE, "image/jpeg")
-            put(MediaStore.MediaColumns.RELATIVE_PATH, "Pictures/MyCamera/")
-        }
-        uri = context.contentResolver.insert(
-            MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
-            contentValues
-        )
-    }
-    return uri?: getImageUriforPreQ(context)
-}
-
-private fun getImageUriforPreQ(context: Context):Uri{
-    val filesDir = context.getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-    val imageFile = File(filesDir, "/MyCamera/$timeStamp.jpg")
-    if (imageFile.parentFile?.exists() == false) imageFile.parentFile?.mkdir()
-    return FileProvider.getUriForFile(
-        context,
-        "${context.packageName}.fileprovider",
-        imageFile
-    )
-}
 
 fun createCustomTempFile(context: Context): File{
     val filesDir = context.externalCacheDir
@@ -82,4 +52,18 @@ fun File.reduceFileImage(): File{
 
 
     return file
+}
+
+fun getProfileIcon(context: Context, isLocalUser: Boolean): Drawable {
+    val drawable =
+        ContextCompat.getDrawable(context, R.drawable.mascot)
+            ?: throw IllegalStateException("Could not get user profile image")
+
+    if (isLocalUser) {
+        ContextCompat.getDrawable(context, R.drawable.baseline_account_circle_24)
+    } else {
+        ContextCompat.getDrawable(context, R.drawable.mascot)
+    }
+
+    return drawable
 }

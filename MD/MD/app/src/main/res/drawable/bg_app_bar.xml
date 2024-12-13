@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="4dp"> <!-- Shadow Tebal 4dp -->
+        <shape>
+            <gradient
+                android:startColor="#212121"
+            android:endColor="#8E8E8E"
+            android:angle="270" />
+        </shape>
+    </item>
+</layer-list>

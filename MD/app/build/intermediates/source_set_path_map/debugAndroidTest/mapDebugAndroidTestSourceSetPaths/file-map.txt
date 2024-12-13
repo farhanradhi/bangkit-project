@@ -1,0 +1,6 @@
+com.capstone.sampahin.test.app-tracing-1.2.0-0 C:\Users\Marrr\.gradle\caches\transforms-4\a4ed53effaec26a850436968812d3731\transformed\tracing-1.2.0\res
+com.capstone.sampahin.test.app-core-1.6.1-1 C:\Users\Marrr\.gradle\caches\transforms-4\be8e449238db2bb57d8ee140e1ead8b5\transformed\core-1.6.1\res
+com.capstone.sampahin.test.app-androidTest-2 E:\Iffah\SampahIn\app\build\generated\res\resValues\androidTest\debug
+com.capstone.sampahin.test.app-mergeDebugAndroidTestResources-3 E:\Iffah\SampahIn\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.capstone.sampahin.test.app-mergeDebugAndroidTestResources-4 E:\Iffah\SampahIn\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.capstone.sampahin.test.app-debugAndroidTest-5 E:\Iffah\SampahIn\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

@@ -1,0 +1,232 @@
+Index: app/src/main/res/values/colors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<resources>\r\n    <color name=\"black\">#FF000000</color>\r\n    <color name=\"white\">#FFFFFFFF</color>\r\n    <color name=\"primaryColor\">#66CC33</color>\r\n    <color name=\"secondaryColor\">#98CE00</color>\r\n    <color name=\"backgroundColor\">#FFFFFF</color>\r\n    <color name=\"bottomBarActiveColor\">#66CC33</color>\r\n    <color name=\"bottomBarInactiveColor\">#B0B0B0</color>\r\n    <color name=\"textColor\">#000000</color>\r\n    <color name=\"textColorSecondary\">#666666</color>\r\n    <color name=\"red\">#FF0000</color>\r\n    <color name=\"gray\">#DBDBDB</color>\r\n    <color name=\"black_transparent\">#80000000</color>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/colors.xml b/app/src/main/res/values/colors.xml
+--- a/app/src/main/res/values/colors.xml	(revision 7764ac372c60e696ad9727552106ef757f6221da)
++++ b/app/src/main/res/values/colors.xml	(date 1733920519574)
+@@ -1,15 +1,167 @@
+-<?xml version="1.0" encoding="utf-8"?>
+ <resources>
+-    <color name="black">#FF000000</color>
+-    <color name="white">#FFFFFFFF</color>
+-    <color name="primaryColor">#66CC33</color>
+-    <color name="secondaryColor">#98CE00</color>
+-    <color name="backgroundColor">#FFFFFF</color>
+-    <color name="bottomBarActiveColor">#66CC33</color>
+-    <color name="bottomBarInactiveColor">#B0B0B0</color>
+-    <color name="textColor">#000000</color>
+-    <color name="textColorSecondary">#666666</color>
+-    <color name="red">#FF0000</color>
+-    <color name="gray">#DBDBDB</color>
+-    <color name="black_transparent">#80000000</color>
+-</resources>
+\ No newline at end of file
++    <color name="md_theme_primary">#2A6C00</color>
++    <color name="md_theme_onPrimary">#FFFFFF</color>
++    <color name="md_theme_primaryContainer">#80F93F</color>
++    <color name="md_theme_onPrimaryContainer">#1D5000</color>
++    <color name="md_theme_secondary">#2F6C0C</color>
++    <color name="md_theme_onSecondary">#FFFFFF</color>
++    <color name="md_theme_secondaryContainer">#B1F78A</color>
++    <color name="md_theme_onSecondaryContainer">#1F5400</color>
++    <color name="md_theme_tertiary">#006D40</color>
++    <color name="md_theme_onTertiary">#FFFFFF</color>
++    <color name="md_theme_tertiaryContainer">#1DFD9D</color>
++    <color name="md_theme_onTertiaryContainer">#00502E</color>
++    <color name="md_theme_error">#BA1A1A</color>
++    <color name="md_theme_onError">#FFFFFF</color>
++    <color name="md_theme_errorContainer">#FFDAD6</color>
++    <color name="md_theme_onErrorContainer">#410002</color>
++    <color name="md_theme_background">#F4FCE8</color>
++    <color name="md_theme_onBackground">#161E12</color>
++    <color name="md_theme_surface">#F4FCE8</color>
++    <color name="md_theme_onSurface">#161E12</color>
++    <color name="md_theme_surfaceVariant">#DAE7CC</color>
++    <color name="md_theme_onSurfaceVariant">#3F4A36</color>
++    <color name="md_theme_outline">#6F7B64</color>
++    <color name="md_theme_outlineVariant">#BECBB1</color>
++    <color name="md_theme_scrim">#000000</color>
++    <color name="md_theme_inverseSurface">#2B3326</color>
++    <color name="md_theme_inverseOnSurface">#EBF4E0</color>
++    <color name="md_theme_inversePrimary">#69E025</color>
++    <color name="md_theme_primaryFixed">#84FE44</color>
++    <color name="md_theme_onPrimaryFixed">#082100</color>
++    <color name="md_theme_primaryFixedDim">#69E025</color>
++    <color name="md_theme_onPrimaryFixedVariant">#1E5200</color>
++    <color name="md_theme_secondaryFixed">#AFF588</color>
++    <color name="md_theme_onSecondaryFixed">#082100</color>
++    <color name="md_theme_secondaryFixedDim">#94D86F</color>
++    <color name="md_theme_onSecondaryFixedVariant">#1E5200</color>
++    <color name="md_theme_tertiaryFixed">#56FFA8</color>
++    <color name="md_theme_onTertiaryFixed">#002110</color>
++    <color name="md_theme_tertiaryFixedDim">#00E38B</color>
++    <color name="md_theme_onTertiaryFixedVariant">#00522F</color>
++    <color name="md_theme_surfaceDim">#D5DDCA</color>
++    <color name="md_theme_surfaceBright">#F4FCE8</color>
++    <color name="md_theme_surfaceContainerLowest">#FFFFFF</color>
++    <color name="md_theme_surfaceContainerLow">#EEF7E3</color>
++    <color name="md_theme_surfaceContainer">#E9F1DD</color>
++    <color name="md_theme_surfaceContainerHigh">#E3EBD8</color>
++    <color name="md_theme_surfaceContainerHighest">#DDE5D2</color>
++    <color name="md_theme_primary_mediumContrast">#1C4D00</color>
++    <color name="md_theme_onPrimary_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_primaryContainer_mediumContrast">#358500</color>
++    <color name="md_theme_onPrimaryContainer_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_secondary_mediumContrast">#1C4D00</color>
++    <color name="md_theme_onSecondary_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_secondaryContainer_mediumContrast">#458324</color>
++    <color name="md_theme_onSecondaryContainer_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_tertiary_mediumContrast">#004E2C</color>
++    <color name="md_theme_onTertiary_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_tertiaryContainer_mediumContrast">#008650</color>
++    <color name="md_theme_onTertiaryContainer_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_error_mediumContrast">#8C0009</color>
++    <color name="md_theme_onError_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_errorContainer_mediumContrast">#DA342E</color>
++    <color name="md_theme_onErrorContainer_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_background_mediumContrast">#F4FCE8</color>
++    <color name="md_theme_onBackground_mediumContrast">#161E12</color>
++    <color name="md_theme_surface_mediumContrast">#F4FCE8</color>
++    <color name="md_theme_onSurface_mediumContrast">#161E12</color>
++    <color name="md_theme_surfaceVariant_mediumContrast">#DAE7CC</color>
++    <color name="md_theme_onSurfaceVariant_mediumContrast">#3B4633</color>
++    <color name="md_theme_outline_mediumContrast">#57634E</color>
++    <color name="md_theme_outlineVariant_mediumContrast">#727F68</color>
++    <color name="md_theme_scrim_mediumContrast">#000000</color>
++    <color name="md_theme_inverseSurface_mediumContrast">#2B3326</color>
++    <color name="md_theme_inverseOnSurface_mediumContrast">#EBF4E0</color>
++    <color name="md_theme_inversePrimary_mediumContrast">#69E025</color>
++    <color name="md_theme_primaryFixed_mediumContrast">#358500</color>
++    <color name="md_theme_onPrimaryFixed_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_primaryFixedDim_mediumContrast">#296900</color>
++    <color name="md_theme_onPrimaryFixedVariant_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_secondaryFixed_mediumContrast">#458324</color>
++    <color name="md_theme_onSecondaryFixed_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_secondaryFixedDim_mediumContrast">#2D6909</color>
++    <color name="md_theme_onSecondaryFixedVariant_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_tertiaryFixed_mediumContrast">#008650</color>
++    <color name="md_theme_onTertiaryFixed_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_tertiaryFixedDim_mediumContrast">#006A3E</color>
++    <color name="md_theme_onTertiaryFixedVariant_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_surfaceDim_mediumContrast">#D5DDCA</color>
++    <color name="md_theme_surfaceBright_mediumContrast">#F4FCE8</color>
++    <color name="md_theme_surfaceContainerLowest_mediumContrast">#FFFFFF</color>
++    <color name="md_theme_surfaceContainerLow_mediumContrast">#EEF7E3</color>
++    <color name="md_theme_surfaceContainer_mediumContrast">#E9F1DD</color>
++    <color name="md_theme_surfaceContainerHigh_mediumContrast">#E3EBD8</color>
++    <color name="md_theme_surfaceContainerHighest_mediumContrast">#DDE5D2</color>
++    <color name="md_theme_primary_highContrast">#0B2800</color>
++    <color name="md_theme_onPrimary_highContrast">#FFFFFF</color>
++    <color name="md_theme_primaryContainer_highContrast">#1C4D00</color>
++    <color name="md_theme_onPrimaryContainer_highContrast">#FFFFFF</color>
++    <color name="md_theme_secondary_highContrast">#0B2800</color>
++    <color name="md_theme_onSecondary_highContrast">#FFFFFF</color>
++    <color name="md_theme_secondaryContainer_highContrast">#1C4D00</color>
++    <color name="md_theme_onSecondaryContainer_highContrast">#FFFFFF</color>
++    <color name="md_theme_tertiary_highContrast">#002915</color>
++    <color name="md_theme_onTertiary_highContrast">#FFFFFF</color>
++    <color name="md_theme_tertiaryContainer_highContrast">#004E2C</color>
++    <color name="md_theme_onTertiaryContainer_highContrast">#FFFFFF</color>
++    <color name="md_theme_error_highContrast">#4E0002</color>
++    <color name="md_theme_onError_highContrast">#FFFFFF</color>
++    <color name="md_theme_errorContainer_highContrast">#8C0009</color>
++    <color name="md_theme_onErrorContainer_highContrast">#FFFFFF</color>
++    <color name="md_theme_background_highContrast">#F4FCE8</color>
++    <color name="md_theme_onBackground_highContrast">#161E12</color>
++    <color name="md_theme_surface_highContrast">#F4FCE8</color>
++    <color name="md_theme_onSurface_highContrast">#000000</color>
++    <color name="md_theme_surfaceVariant_highContrast">#DAE7CC</color>
++    <color name="md_theme_onSurfaceVariant_highContrast">#1C2716</color>
++    <color name="md_theme_outline_highContrast">#3B4633</color>
++    <color name="md_theme_outlineVariant_highContrast">#3B4633</color>
++    <color name="md_theme_scrim_highContrast">#000000</color>
++    <color name="md_theme_inverseSurface_highContrast">#2B3326</color>
++    <color name="md_theme_inverseOnSurface_highContrast">#FFFFFF</color>
++    <color name="md_theme_inversePrimary_highContrast">#B8FF90</color>
++    <color name="md_theme_primaryFixed_highContrast">#1C4D00</color>
++    <color name="md_theme_onPrimaryFixed_highContrast">#FFFFFF</color>
++    <color name="md_theme_primaryFixedDim_highContrast">#103400</color>
++    <color name="md_theme_onPrimaryFixedVariant_highContrast">#FFFFFF</color>
++    <color name="md_theme_secondaryFixed_highContrast">#1C4D00</color>
++    <color name="md_theme_onSecondaryFixed_highContrast">#FFFFFF</color>
++    <color name="md_theme_secondaryFixedDim_highContrast">#103400</color>
++    <color name="md_theme_onSecondaryFixedVariant_highContrast">#FFFFFF</color>
++    <color name="md_theme_tertiaryFixed_highContrast">#004E2C</color>
++    <color name="md_theme_onTertiaryFixed_highContrast">#FFFFFF</color>
++    <color name="md_theme_tertiaryFixedDim_highContrast">#00341C</color>
++    <color name="md_theme_onTertiaryFixedVariant_highContrast">#FFFFFF</color>
++    <color name="md_theme_surfaceDim_highContrast">#D5DDCA</color>
++    <color name="md_theme_surfaceBright_highContrast">#F4FCE8</color>
++    <color name="md_theme_surfaceContainerLowest_highContrast">#FFFFFF</color>
++    <color name="md_theme_surfaceContainerLow_highContrast">#EEF7E3</color>
++    <color name="md_theme_surfaceContainer_highContrast">#E9F1DD</color>
++    <color name="md_theme_surfaceContainerHigh_highContrast">#E3EBD8</color>
++    <color name="md_theme_surfaceContainerHighest_highContrast">#DDE5D2</color>
++    <color name="colorCustomColor1">#2F6B1E</color>
++    <color name="colorOnCustomColor1">#FFFFFF</color>
++    <color name="colorCustomColor1Container">#93D67B</color>
++    <color name="colorOnCustomColor1Container">#0A3E00</color>
++    <color name="colorCustomColor2">#286C00</color>
++    <color name="colorOnCustomColor2">#FFFFFF</color>
++    <color name="colorCustomColor2Container">#70D73D</color>
++    <color name="colorOnCustomColor2Container">#123900</color>
++    <color name="colorCustomColor1_mediumContrast">#104E01</color>
++    <color name="colorOnCustomColor1_mediumContrast">#FFFFFF</color>
++    <color name="colorCustomColor1Container_mediumContrast">#458232</color>
++    <color name="colorOnCustomColor1Container_mediumContrast">#FFFFFF</color>
++    <color name="colorCustomColor2_mediumContrast">#1B4D00</color>
++    <color name="colorOnCustomColor2_mediumContrast">#FFFFFF</color>
++    <color name="colorCustomColor2Container_mediumContrast">#338500</color>
++    <color name="colorOnCustomColor2Container_mediumContrast">#FFFFFF</color>
++    <color name="colorCustomColor1_highContrast">#052900</color>
++    <color name="colorOnCustomColor1_highContrast">#FFFFFF</color>
++    <color name="colorCustomColor1Container_highContrast">#104E01</color>
++    <color name="colorOnCustomColor1Container_highContrast">#FFFFFF</color>
++    <color name="colorCustomColor2_highContrast">#0A2800</color>
++    <color name="colorOnCustomColor2_highContrast">#FFFFFF</color>
++    <color name="colorCustomColor2Container_highContrast">#1B4D00</color>
++    <color name="colorOnCustomColor2Container_highContrast">#FFFFFF</color>
++</resources>
+Index: app/src/main/res/values/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources xmlns:tools=\"http://schemas.android.com/tools\">\r\n    <!-- Base application theme. -->\r\n    <style name=\"Base.Theme.SampahIn\" parent=\"Theme.Material3.DayNight\">\r\n        <item name=\"colorPrimary\">@color/primaryColor</item>\r\n        <item name=\"colorSecondary\">@color/secondaryColor</item>\r\n        <item name=\"android:colorBackground\">@color/backgroundColor</item>\r\n        <item name=\"android:textColor\">@color/textColor</item>\r\n        <item name=\"android:fontFamily\">@font/poppins</item>\r\n    </style>\r\n\r\n    <style name=\"Theme.SampahIn\" parent=\"Base.Theme.SampahIn\" />\r\n\r\n    <style name=\"ButtonGreen\">\r\n        <item name=\"cornerRadius\">8dp</item>\r\n        <item name=\"android:backgroundTint\">@color/primaryColor</item>\r\n        <item name=\"android:textColor\">@color/backgroundColor</item>\r\n        <item name=\"android:paddingTop\">12dp</item>\r\n        <item name=\"android:paddingBottom\">12dp</item>\r\n    </style>\r\n\r\n    <style name=\"ButtonWhite\">\r\n        <item name=\"cornerRadius\">8dp</item>\r\n        <item name=\"android:backgroundTint\">@color/backgroundColor</item>\r\n        <item name=\"android:textColor\">@color/primaryColor</item>\r\n        <item name=\"strokeWidth\">2dp</item>\r\n        <item name=\"strokeColor\">@color/primaryColor</item>\r\n        <item name=\"android:paddingTop\">12dp</item>\r\n        <item name=\"android:paddingBottom\">12dp</item>\r\n    </style>\r\n\r\n    <style name=\"ActiveTextStyle\">\r\n        <item name=\"android:textSize\">14sp</item>\r\n        <item name=\"android:textColor\">@color/primaryColor</item>\r\n    </style>\r\n\r\n    <style name=\"InactiveTextStyle\">\r\n        <item name=\"android:textSize\">12sp</item>\r\n        <item name=\"android:textColor\">@color/textColor</item>\r\n    </style>\r\n\r\n\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/themes.xml b/app/src/main/res/values/themes.xml
+--- a/app/src/main/res/values/themes.xml	(revision 7764ac372c60e696ad9727552106ef757f6221da)
++++ b/app/src/main/res/values/themes.xml	(date 1733927266441)
+@@ -5,7 +5,7 @@
+         <item name="colorSecondary">@color/secondaryColor</item>
+         <item name="android:colorBackground">@color/backgroundColor</item>
+         <item name="android:textColor">@color/textColor</item>
+-        <item name="android:fontFamily">@font/poppins</item>
++        <item name="android:fontFamily">@font/quicksand</item>
+     </style>
+ 
+     <style name="Theme.SampahIn" parent="Base.Theme.SampahIn" />
+Index: app/src/main/res/font/poppins.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<font-family xmlns:android=\"http://schemas.android.com/apk/res/android\">\r\n    <font android:fontStyle=\"normal\" android:fontWeight=\"400\" android:font=\"@font/poppins_regular\" />\r\n</font-family>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/font/poppins.xml b/app/src/main/res/font/poppins.xml
+--- a/app/src/main/res/font/poppins.xml	(revision 7764ac372c60e696ad9727552106ef757f6221da)
++++ b/app/src/main/res/font/poppins.xml	(date 1733927355635)
+@@ -1,4 +1,7 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <font-family xmlns:android="http://schemas.android.com/apk/res/android">
+-    <font android:fontStyle="normal" android:fontWeight="400" android:font="@font/poppins_regular" />
++    <font
++        android:font="@font/poppins_regular"
++        android:fontStyle="normal"
++        android:fontWeight="400" />
+ </font-family>
+\ No newline at end of file

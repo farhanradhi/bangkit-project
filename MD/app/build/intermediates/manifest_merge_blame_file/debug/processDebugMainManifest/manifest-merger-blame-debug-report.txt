@@ -1,0 +1,324 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.capstone.sampahin"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-feature android:name="android.hardware.camera" />
+11-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:5:5-60
+11-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:5:19-57
+12
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:7:5-65
+13-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:7:22-62
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:8:5-67
+14-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:8:22-64
+15    <uses-permission
+15-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:9:5-11:38
+16        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+16-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:10:9-65
+17        android:maxSdkVersion="28" />
+17-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:11:9-35
+18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+18-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:12:5-79
+18-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:12:22-76
+19    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+19-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:13:5-81
+19-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:13:22-78
+20
+21    <!-- Include required permissions for Google Maps API to run. -->
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\dfd70ecda85fb985e102071e4267b266\transformed\play-services-maps-19.0.0\AndroidManifest.xml:23:5-79
+22-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\dfd70ecda85fb985e102071e4267b266\transformed\play-services-maps-19.0.0\AndroidManifest.xml:23:22-76
+23
+24    <uses-feature
+24-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\dfd70ecda85fb985e102071e4267b266\transformed\play-services-maps-19.0.0\AndroidManifest.xml:26:5-28:35
+25        android:glEsVersion="0x00020000"
+25-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\dfd70ecda85fb985e102071e4267b266\transformed\play-services-maps-19.0.0\AndroidManifest.xml:27:9-41
+26        android:required="true" />
+26-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\dfd70ecda85fb985e102071e4267b266\transformed\play-services-maps-19.0.0\AndroidManifest.xml:28:9-32
+27
+28    <queries>
+28-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\dfd70ecda85fb985e102071e4267b266\transformed\play-services-maps-19.0.0\AndroidManifest.xml:30:5-34:15
+29
+30        <!-- Needs to be explicitly declared on Android R+ -->
+31        <package android:name="com.google.android.apps.maps" />
+31-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\dfd70ecda85fb985e102071e4267b266\transformed\play-services-maps-19.0.0\AndroidManifest.xml:33:9-64
+31-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\dfd70ecda85fb985e102071e4267b266\transformed\play-services-maps-19.0.0\AndroidManifest.xml:33:18-61
+32    </queries>
+33
+34    <permission
+34-->[androidx.core:core:1.15.0] C:\Users\Marrr\.gradle\caches\transforms-4\9d4b765dc01a244d77e7939bf4df43c0\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+35        android:name="com.capstone.sampahin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+35-->[androidx.core:core:1.15.0] C:\Users\Marrr\.gradle\caches\transforms-4\9d4b765dc01a244d77e7939bf4df43c0\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+36        android:protectionLevel="signature" />
+36-->[androidx.core:core:1.15.0] C:\Users\Marrr\.gradle\caches\transforms-4\9d4b765dc01a244d77e7939bf4df43c0\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+37
+38    <uses-permission android:name="com.capstone.sampahin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+38-->[androidx.core:core:1.15.0] C:\Users\Marrr\.gradle\caches\transforms-4\9d4b765dc01a244d77e7939bf4df43c0\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+38-->[androidx.core:core:1.15.0] C:\Users\Marrr\.gradle\caches\transforms-4\9d4b765dc01a244d77e7939bf4df43c0\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+39    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+40    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+41
+42    <application
+42-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:15:5-88:19
+43        android:allowBackup="true"
+43-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:16:9-35
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.15.0] C:\Users\Marrr\.gradle\caches\transforms-4\9d4b765dc01a244d77e7939bf4df43c0\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+45        android:dataExtractionRules="@xml/data_extraction_rules"
+45-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:17:9-65
+46        android:debuggable="true"
+47        android:enableOnBackInvokedCallback="true"
+47-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:18:9-51
+48        android:extractNativeLibs="true"
+49        android:fullBackupContent="@xml/backup_rules"
+49-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:19:9-54
+50        android:icon="@mipmap/ic_launcher"
+50-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:20:9-43
+51        android:label="@string/app_name"
+51-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:21:9-41
+52        android:roundIcon="@mipmap/ic_launcher_round"
+52-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:22:9-54
+53        android:supportsRtl="true"
+53-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:23:9-35
+54        android:testOnly="true"
+55        android:theme="@style/Theme.SampahIn" >
+55-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:24:9-46
+56        <activity
+56-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:26:9-30:71
+57            android:name="com.capstone.sampahin.ui.WelcomeActivity"
+57-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:27:13-47
+58            android:exported="false"
+58-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:28:13-37
+59            android:screenOrientation="portrait" />
+59-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:29:13-49
+60        <activity
+60-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:31:9-35:71
+61            android:name="com.capstone.sampahin.ui.profilemenu.history.HistoryActivity"
+61-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:32:13-67
+62            android:exported="false"
+62-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:33:13-37
+63            android:screenOrientation="portrait" />
+63-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:34:13-49
+64
+65        <meta-data
+66            android:name="com.google.android.geo.API_KEY"
+66-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:38:13-58
+67            android:value="" />
+67-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:39:13-44
+68
+69        <activity
+69-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:41:9-45:71
+70            android:name="com.capstone.sampahin.ui.scan.CameraActivity"
+70-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:42:13-51
+71            android:exported="false"
+71-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:43:13-37
+72            android:screenOrientation="portrait" />
+72-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:44:13-49
+73
+74        <provider
+75            android:name="androidx.core.content.FileProvider"
+75-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:48:13-62
+76            android:authorities="com.capstone.sampahin.fileprovider"
+76-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:49:13-64
+77            android:exported="false"
+77-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:50:13-37
+78            android:grantUriPermissions="true" >
+78-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:51:13-47
+79            <meta-data
+79-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:52:13-54:54
+80                android:name="android.support.FILE_PROVIDER_PATHS"
+80-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:53:17-67
+81                android:resource="@xml/file_paths" />
+81-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:54:17-51
+82        </provider>
+83
+84        <activity
+84-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:57:9-61:71
+85            android:name="com.yalantis.ucrop.UCropActivity"
+85-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:58:13-60
+86            android:screenOrientation="portrait"
+86-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:59:13-49
+87            android:theme="@style/Theme.Material3.DayNight.NoActionBar" />
+87-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:60:13-72
+88        <activity
+88-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:62:9-66:71
+89            android:name="com.capstone.sampahin.ui.login.LoginActivity"
+89-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:63:13-51
+90            android:exported="false"
+90-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:64:13-37
+91            android:screenOrientation="portrait" />
+91-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:65:13-49
+92        <activity
+92-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:67:9-71:71
+93            android:name="com.capstone.sampahin.ui.register.RegisterActivity"
+93-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:68:13-57
+94            android:exported="false"
+94-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:69:13-37
+95            android:screenOrientation="portrait" />
+95-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:70:13-49
+96        <activity
+96-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:72:9-76:71
+97            android:name="com.capstone.sampahin.ui.MainActivity"
+97-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:73:13-44
+98            android:exported="false"
+98-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:74:13-37
+99            android:screenOrientation="portrait" />
+99-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:75:13-49
+100        <activity
+100-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:77:9-87:20
+101            android:name="com.capstone.sampahin.ui.SplashActivity"
+101-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:78:13-46
+102            android:exported="true"
+102-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:79:13-36
+103            android:screenOrientation="portrait" >
+103-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:80:13-49
+104            <intent-filter>
+104-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:82:13-86:29
+105                <action android:name="android.intent.action.MAIN" />
+105-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:83:17-69
+105-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:83:25-66
+106
+107                <category android:name="android.intent.category.LAUNCHER" />
+107-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:85:17-77
+107-->E:\Iffah\SampahIn\app\src\main\AndroidManifest.xml:85:27-74
+108            </intent-filter>
+109        </activity>
+110        <!--
+111        Service for holding metadata. Cannot be instantiated.
+112        Metadata will be merged from other manifests.
+113        -->
+114        <service
+114-->[androidx.camera:camera-core:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\0ce10d3570e1fe2a0aa2149af2dd9da8\transformed\camera-core-1.4.0\AndroidManifest.xml:29:9-33:78
+115            android:name="androidx.camera.core.impl.MetadataHolderService"
+115-->[androidx.camera:camera-core:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\0ce10d3570e1fe2a0aa2149af2dd9da8\transformed\camera-core-1.4.0\AndroidManifest.xml:30:13-75
+116            android:enabled="false"
+116-->[androidx.camera:camera-core:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\0ce10d3570e1fe2a0aa2149af2dd9da8\transformed\camera-core-1.4.0\AndroidManifest.xml:31:13-36
+117            android:exported="false" >
+117-->[androidx.camera:camera-core:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\0ce10d3570e1fe2a0aa2149af2dd9da8\transformed\camera-core-1.4.0\AndroidManifest.xml:32:13-37
+118            <meta-data
+118-->[androidx.camera:camera-camera2:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\7dd7bf30591436358ddd631453116c66\transformed\camera-camera2-1.4.0\AndroidManifest.xml:30:13-32:89
+119                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+119-->[androidx.camera:camera-camera2:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\7dd7bf30591436358ddd631453116c66\transformed\camera-camera2-1.4.0\AndroidManifest.xml:31:17-103
+120                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+120-->[androidx.camera:camera-camera2:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\7dd7bf30591436358ddd631453116c66\transformed\camera-camera2-1.4.0\AndroidManifest.xml:32:17-86
+121        </service> <!-- Needs to be explicitly declared on P+ -->
+122        <uses-library
+122-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\dfd70ecda85fb985e102071e4267b266\transformed\play-services-maps-19.0.0\AndroidManifest.xml:39:9-41:40
+123            android:name="org.apache.http.legacy"
+123-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\dfd70ecda85fb985e102071e4267b266\transformed\play-services-maps-19.0.0\AndroidManifest.xml:40:13-50
+124            android:required="false" />
+124-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\dfd70ecda85fb985e102071e4267b266\transformed\play-services-maps-19.0.0\AndroidManifest.xml:41:13-37
+125
+126        <activity
+126-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Marrr\.gradle\caches\transforms-4\e82eecf0238a56cc462fdcea8040abac\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+127            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+127-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Marrr\.gradle\caches\transforms-4\e82eecf0238a56cc462fdcea8040abac\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+128            android:exported="false"
+128-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Marrr\.gradle\caches\transforms-4\e82eecf0238a56cc462fdcea8040abac\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+129            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+129-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Marrr\.gradle\caches\transforms-4\e82eecf0238a56cc462fdcea8040abac\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+130
+131        <meta-data
+131-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\bdc8711a35c289ddb9a1161e4c886fea\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+132            android:name="com.google.android.gms.version"
+132-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\bdc8711a35c289ddb9a1161e4c886fea\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+133            android:value="@integer/google_play_services_version" />
+133-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\bdc8711a35c289ddb9a1161e4c886fea\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+134
+135        <provider
+135-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Marrr\.gradle\caches\transforms-4\191e4cc813c9ba7caacadb2419e73179\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+136            android:name="androidx.startup.InitializationProvider"
+136-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Marrr\.gradle\caches\transforms-4\191e4cc813c9ba7caacadb2419e73179\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+137            android:authorities="com.capstone.sampahin.androidx-startup"
+137-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Marrr\.gradle\caches\transforms-4\191e4cc813c9ba7caacadb2419e73179\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+138            android:exported="false" >
+138-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Marrr\.gradle\caches\transforms-4\191e4cc813c9ba7caacadb2419e73179\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+139            <meta-data
+139-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Marrr\.gradle\caches\transforms-4\191e4cc813c9ba7caacadb2419e73179\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+140                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+140-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Marrr\.gradle\caches\transforms-4\191e4cc813c9ba7caacadb2419e73179\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+141                android:value="androidx.startup" />
+141-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Marrr\.gradle\caches\transforms-4\191e4cc813c9ba7caacadb2419e73179\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+142            <meta-data
+142-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Marrr\.gradle\caches\transforms-4\49efd3d3634be878b53f7c7ac50ea5c3\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+143                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+143-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Marrr\.gradle\caches\transforms-4\49efd3d3634be878b53f7c7ac50ea5c3\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+144                android:value="androidx.startup" />
+144-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Marrr\.gradle\caches\transforms-4\49efd3d3634be878b53f7c7ac50ea5c3\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+145            <meta-data
+145-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+146                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+146-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+147                android:value="androidx.startup" />
+147-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+148        </provider>
+149
+150        <uses-library
+150-->[androidx.window:window:1.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\00f2dac8e89643de4d6d983393a6fcb1\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+151            android:name="androidx.window.extensions"
+151-->[androidx.window:window:1.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\00f2dac8e89643de4d6d983393a6fcb1\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+152            android:required="false" />
+152-->[androidx.window:window:1.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\00f2dac8e89643de4d6d983393a6fcb1\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+153        <uses-library
+153-->[androidx.window:window:1.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\00f2dac8e89643de4d6d983393a6fcb1\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+154            android:name="androidx.window.sidecar"
+154-->[androidx.window:window:1.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\00f2dac8e89643de4d6d983393a6fcb1\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+155            android:required="false" />
+155-->[androidx.window:window:1.0.0] C:\Users\Marrr\.gradle\caches\transforms-4\00f2dac8e89643de4d6d983393a6fcb1\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+156
+157        <receiver
+157-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+158            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+158-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+159            android:directBootAware="false"
+159-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+160            android:enabled="true"
+160-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+161            android:exported="true"
+161-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+162            android:permission="android.permission.DUMP" >
+162-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+163            <intent-filter>
+163-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+164                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+164-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+164-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+165            </intent-filter>
+166            <intent-filter>
+166-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+167                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+167-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+167-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+168            </intent-filter>
+169            <intent-filter>
+169-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+170                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+170-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+170-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+171            </intent-filter>
+172            <intent-filter>
+172-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+173                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+173-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+173-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Marrr\.gradle\caches\transforms-4\c892bf62dfffdd4034ca8b1f038de92f\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+174            </intent-filter>
+175        </receiver>
+176
+177        <service
+177-->[androidx.room:room-runtime:2.5.0] C:\Users\Marrr\.gradle\caches\transforms-4\8d1deb8137fd8cb3631a98c77c565c2c\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
+178            android:name="androidx.room.MultiInstanceInvalidationService"
+178-->[androidx.room:room-runtime:2.5.0] C:\Users\Marrr\.gradle\caches\transforms-4\8d1deb8137fd8cb3631a98c77c565c2c\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
+179            android:directBootAware="true"
+179-->[androidx.room:room-runtime:2.5.0] C:\Users\Marrr\.gradle\caches\transforms-4\8d1deb8137fd8cb3631a98c77c565c2c\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
+180            android:exported="false" />
+180-->[androidx.room:room-runtime:2.5.0] C:\Users\Marrr\.gradle\caches\transforms-4\8d1deb8137fd8cb3631a98c77c565c2c\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
+181    </application>
+182
+183</manifest>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sampah.In</string>
+    <string name="title_home">Beranda</string>
+    <string name="chat">Obrolan</string>
+    <string name="maps">Peta</string>
+    <string name="password">Kata Sandi</string>
+
+    <string name="password_min_character">Kata sandi harus memiliki setidaknya 8 karakter</string>
+    <string name="email_format">Format Email Salah</string>
+    <string name="scan">Pindai</string>
+    <string name="profile">Profil</string>
+    <string name="create_an_account">Buat akun</string>
+    <string name="login">Masuk</string>
+    <string name="welcome">Selamat datang</string>
+    <string name="welcome_desc">Kelola sampah untuk kehidupan yang lebih baik!</string>
+    <string name="sign_up_title">Daftar dengan email Anda</string>
+    <string name="login_title">Masuk dengan email Anda</string>
+    <string name="hint_name">Nama</string>
+    <string name="hint_email">Email</string>
+    <string name="register">Daftar</string>
+    <string name="or">atau</string>
+    <string name="hint_password">Masukkan Kata Sandi</string>
+    <string name="confirm_password">Konfirmasi Kata Sandi</string>
+    <string name="sign_up">Daftar</string>
+    <string name="gallery">Galeri</string>
+    <string name="empty_image_warning">Pilih gambar terlebih dahulu</string>
+    <string name="result">Hasil</string>
+    <string name="camera">Kamera</string>
+    <string name="email">Email</string>
+    <string name="profile_email">UserEmail@gmail.com</string>
+    <string name="profile_name">Nama Pengguna</string>
+    <string name="language_settings">Pengaturan Bahasa</string>
+    <string name="about">Tentang</string>
+    <string name="contact">Hubungi Kami</string>
+    <string name="sign_out">Keluar</string>
+    <string name="logout_success">Berhasil Keluar</string>
+    <string name="hello_user">Halo, Pengguna!</string>
+    <string name="lets_recycle">Mari Daur Ulang</string>
+    <string name="category">Kategori</string>
+    <string name="appbar_sammy">Sammy</string>
+    <string name="back">Kembali</string>
+    <string name="tv_suggestion_label">Anda mungkin ingin bertanya:</string>
+    <string name="ib_send_label">Tombol Kirim</string>
+    <string name="tv_pick_topic_label">Pilih topik.</string>
+    <string name="tiet_question_label">Ketikkan pertanyaan Anda…</string>
+    <string name="fragment_qa_title">%s - Bert QA</string>
+    <string name="text_home_maps">Temukan lokasi pengumpul terdekat!</string>
+    <string-array name="data_photo">
+        <item>https://www.pngall.com/wp-content/uploads/5/Plastic-Bottle-PNG-High-Quality-Image.png</item>
+        <item>https://www.pngmart.com/files/11/Firewood-Wood-PNG-Clipart.png</item>
+        <item>https://freepngdesign.com/content/uploads/images/metal-can-6725860182.png</item>
+        <item>https://www.pngmart.com/files/10/Pile-Of-Autumn-Leaves-PNG-Photos.png</item>
+        <item>https://static.vecteezy.com/system/resources/previews/011/190/622/original/crumpled-paper-ball-png.png</item>
+        <item>https://www.pngmart.com/files/15/Empty-Glass-Water-Bottle-PNG-File.png</item>
+        <item>https://pngimg.com/uploads/box/box_PNG11.png</item>
+        <item>https://static.vecteezy.com/system/resources/previews/033/293/177/non_2x/food-waste-isolated-on-transparent-generative-ai-free-png.png</item>
+    </string-array>
+    <string-array name="data_name">
+        <item>Plastik</item>
+        <item>Kayu</item>
+        <item>Besi</item>
+        <item>Daun</item>
+        <item>Kertas</item>
+        <item>Kaca</item>
+        <item>Kardus</item>
+        <item>Sisa Makanan</item>
+    </string-array>
+
+    <string name="besi">Besi</string>
+    <string name="daun">Daun</string>
+    <string name="kaca">Kaca</string>
+    <string name="kardus">Kardus</string>
+    <string name="kayu">Kayu</string>
+    <string name="kertas">Kertas</string>
+    <string name="plastik">Plastik</string>
+    <string name="sisa_makanan">Sisa Makanan</string>
+
+    <string name="desc_besi">Besi bekas merujuk pada logam yang telah digunakan dan tidak lagi berguna dalam bentuk aslinya. Biasanya didaur ulang untuk membuat produk baru seperti barang rumah tangga, bahan konstruksi, dan suku cadang otomotif. Daur ulang besi mengurangi kebutuhan untuk penambangan baru dan menghemat energi.</string>
+    <string name="desc_daun">Daun bekas merujuk pada daun tanaman yang jatuh atau dipotong, biasanya dibuang atau digunakan sebagai kompos. Daun yang sudah kering dapat didaur ulang menjadi kompos yang berguna untuk pertanian dan pengelolaan taman.</string>
+    <string name="desc_kaca">Kaca bekas adalah material yang dapat didaur ulang yang dapat digunakan kembali tanpa mengurangi kualitasnya. Ini termasuk botol kaca, wadah, dan barang-barang kaca lainnya. Daur ulang kaca mengurangi kebutuhan pasir silika dan menghemat energi.</string>
+    <string name="desc_kardus">Kardus bekas merujuk pada kemasan kertas yang biasa digunakan untuk mengirim barang. Kemasan kardus dapat didaur ulang menjadi produk kertas baru. Proses daur ulang kardus mengurangi sampah dan menghemat bahan baku.</string>
+    <string name="desc_kayu">Kayu bekas berasal dari potongan kayu atau produk kayu yang tidak lagi digunakan. Kayu bekas dapat didaur ulang atau digunakan kembali untuk membuat furnitur atau bahan konstruksi, mengurangi kebutuhan untuk menebang pohon baru.</string>
+    <string name="desc_kertas">Kertas bekas merujuk pada kertas yang telah digunakan atau dibuang, yang tidak lagi memiliki kegunaan langsung dalam bentuk aslinya dan biasanya dibuang atau didaur ulang. Kertas bekas dapat didaur ulang menjadi berbagai produk kertas baru, mengurangi penebangan pohon dan menghemat energi.</string>
+    <string name="desc_plastik">Plastik bekas merujuk pada plastik yang telah digunakan dan tidak lagi dibutuhkan. Plastik bekas dapat didaur ulang menjadi berbagai produk baru, tetapi prosesnya sering lebih kompleks karena berbagai jenis plastik.</string>
+    <string name="desc_sisa_makanan">Sisa makanan adalah material organik yang berasal dari makanan yang telah dikonsumsi atau dibuang. Sisa makanan dapat digunakan untuk kompos atau diubah menjadi produk bioenergi, membantu mengurangi sampah dan meningkatkan kesuburan tanah.</string>
+    <string name="result_label">%s %.2f%%</string>
+
+    <string name="add_address">Masukkan Alamat</string>
+    <string name="radius">Radius (meter)</string>
+
+    <string name="must_fill">Harap isi kolom yang kosong</string>
+    <string name="must_fill_name">Harap isi kolom nama</string>
+    <string name="must_fill_email">Harap isi kolom email</string>
+    <string name="must_fill_password">Harap isi kolom kata sandi</string>
+    <string name="must_fill_password_confirm">Harap isi kolom konfirmasi kata sandi</string>
+
+    <string name="maps_fail">Tidak ada tempat yang tersedia dalam radius ini atau alamat salah</string>
+    <string name="get_my_location">Dapatkan Lokasi Saya</string>
+    <string name="password_not_match">Kata sandi tidak cocok</string>
+    <string name="location_permission_denied">Izin Ditolak</string>
+    <string name="signUp_login">Belum punya akun? Daftar di sini</string>
+    <string name="chat_scan">Ada pertanyaan? Tanyakan di sini!</string>
+    <string name="title">Judul</string>
+    <string name="closest_place_recomendation">Rekomendasi Tempat Terdekat</string>
+    <string name="date">Tanggal</string>
+    <string name="history_scans">Riwayat Pindaian</string>
+    <string name="bukan_sampah">Bukan Sampah</string>
+    <string name="desc_bukan_sampah">-</string>
+    <string name="blank">Kosong</string>
+    <string name="login_success">Masuk Berhasil</string>
+    <string name="must_fill_address">Harus mengisi alamat dan radius</string>
+    <string name="location_success">Berhasil mendapatkan lokasi</string>
+    <string name="must_fill_radius">Harus mengisi radius</string>
+    <string name="failed_to_get_location">Gagal mendapatkan lokasi</string>
+    <string name="user_not_found">Pengguna tidak ditemukan</string>
+    <string name="failed_to_start_camera">Gagal memulai kamera</string>
+    <string name="failed_to_take_picture">Gagal mengambil gambar</string>
+    <string name="failed_message">Maaf, saya tidak bisa menjawab pertanyaan Anda %1$s</string>
+    <string name="please_enter_the_question_first">Harap masukkan pertanyaan terlebih dahulu.</string>
+    <string name="initial_chat">Selamat datang! Jangan ragu untuk bertanya %1$s</string>
+    <string name="scan_fragment">Fragmen Pindaian</string>
+    <string name="confirm_exit_message">Apakah Anda yakin ingin menghapus progres pindaian?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="splash_title">Sampah.</string>
+    <string name="splash_title2">In</string>
+    <string name="about_us">Tentang Kami</string>
+    <string name="about_us_description">Aplikasi ini dibuat oleh tim kami : \n\nM.Reihan Alif AD\nRizki Putra Ramadhan\nLaura Nur Meilindy\nFarhan Radhi Zuhri\nIka Widiyanti\nIffah Karimah\nWendy</string>
+    <string name="contact_description">"Email : CapstoneTeam@gmail.com \nTelepon : +62 8123456788"</string>
+    <string name="logout_confirmation">Apakah Anda yakin ingin keluar?</string>
+</resources>

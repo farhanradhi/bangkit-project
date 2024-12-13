@@ -6,12 +6,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.Window
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.capstone.sampahin.R
+import androidx.appcompat.app.AppCompatDelegate
 import com.capstone.sampahin.databinding.ActivityWelcomeBinding
+import com.capstone.sampahin.ui.login.LoginActivity
+import com.capstone.sampahin.ui.register.RegisterActivity
 
 class WelcomeActivity : AppCompatActivity() {
 
@@ -20,6 +19,7 @@ class WelcomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         window.requestFeature(Window.FEATURE_NO_TITLE)
         supportActionBar?.hide()
 

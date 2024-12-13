@@ -2,11 +2,11 @@ package com.capstone.sampahin.ui
 
 import android.content.res.ColorStateList
 import android.os.Bundle
-import android.view.View
 import android.view.Window
-import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         window.requestFeature(Window.FEATURE_NO_TITLE)
         supportActionBar?.hide()
 
@@ -49,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_home,
-                R.id.navigation_chat,
+                R.id.navigation_topics,
                 R.id.navigation_scan,
                 R.id.navigation_maps,
                 R.id.navigation_profile
@@ -58,6 +59,5 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
-
 
 }

@@ -1,0 +1,406 @@
+[
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_img.png.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\img.png"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_visibility_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_visibility_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_ic_camera.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\ic_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_maps_form.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\maps_form.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_ic_switch_camera.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\ic_switch_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_keyboard_arrow_down_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_keyboard_arrow_down_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\ic_logout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_leafs.png.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\leafs.png"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_place_layout.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\place_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_fragment_topics.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\fragment_topics.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_activity_welcome.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_location_icons.png.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\location_icons.png"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_circle_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_circle_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_fragment_maps.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\fragment_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_activity_history.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\activity_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_visibility_off_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_visibility_off_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_fragment_chat.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\fragment_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\font_quicksand.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\font\\quicksand.xml"
+    },
+    {
+        "merged": "com.capstone.sampahin.app-debug-67:/drawable_app_icon.png.flat",
+        "source": "com.capstone.sampahin.app-main-69:/drawable/app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_recycle_icon.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\recycle_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\font_poppins.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\font\\poppins.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.capstone.sampahin.app-debug-67:/layout_activity_splash.xml.flat",
+        "source": "com.capstone.sampahin.app-main-69:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_ic_arrow_right.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\ic_arrow_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_iv_profile.png.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\iv_profile.png"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_chat_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_chat_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_ic_analyze.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\ic_analyze.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_ic_info.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\ic_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_recycle_placeholder.gif.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\recycle_placeholder.gif"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_profile_layout.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\profile_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_account_circle_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_account_circle_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_scan_layout.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\scan_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_btn_stroke.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\btn_stroke.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_email_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_email_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_fragment_scan.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\fragment_scan.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_history_layout.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\history_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_keyboard_arrow_up_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_keyboard_arrow_up_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_custom_bottom_nav_background.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\custom_bottom_nav_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_lock_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_lock_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-pngs-63:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_custom_appbar_nav_background.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\custom_appbar_nav_background.xml"
+    },
+    {
+        "merged": "com.capstone.sampahin.app-debug-67:/layout_fragment_profile.xml.flat",
+        "source": "com.capstone.sampahin.app-main-69:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_btn_profile.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\btn_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_mascot.png.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\mascot.png"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_bg_app_bar.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\bg_app_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_send_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_send_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_maps_home.png.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\maps_home.png"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_arrow_back_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_arrow_back_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\font_poppins_regular.ttf.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\font\\poppins_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\font_quicksand_regular.ttf.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\font\\quicksand_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_item_question_suggestion.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\item_question_suggestion.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_rounded_rectangle_green.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\rounded_rectangle_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_input_background.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\input_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_button_background.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_ic_place_holder.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\ic_place_holder.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_item_topic.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\item_topic.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_rounded_rectangle_gray.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\rounded_rectangle_gray.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_item_message_local.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\item_message_local.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_item_category.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_rounded_background.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\rounded_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_border_btn.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\border_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_border.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\border.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_location_pin_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_location_pin_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_ic_capture.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\ic_capture.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_item_message_another_user.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\item_message_another_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_btn_stroke_white.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\btn_stroke_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_line.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\line.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\layout_activity_camera.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\activity_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_ic_gallery.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\ic_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_baseline_recycling_24.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\baseline_recycling_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-debug-67:\\drawable_ic_history.xml.flat",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\drawable\\ic_history.xml"
+    }
+]

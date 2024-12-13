@@ -1,37 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SampahIn</string>
+    <string name="app_name">Sampah.In</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="chat">Chat</string>
     <string name="maps">Maps</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password">Password</string>
+
+    <string name="password_min_character">Password must be at least 8 Characters</string>
+    <string name="email_format">Wrong Email Format</string>
     <string name="scan">Scan</string>
     <string name="profile">Profile</string>
     <string name="create_an_account">Create an account</string>
     <string name="login">Login</string>
     <string name="welcome">Welcome</string>
-    <string name="welcome_desc">Manage waster for better life!</string>
+    <string name="welcome_desc">Manage waste for better life!</string>
     <string name="sign_up_title">Sign up with your email</string>
     <string name="login_title">Login with your email</string>
     <string name="hint_name">Name</string>
     <string name="hint_email">Email</string>
     <string name="register">Register</string>
     <string name="or">or</string>
-    <string name="sign_up_with_gmail">Sign Up with Gmail</string>
-    <string name="back_button"><![CDATA[< Back]]></string>
-    <string name="male">Male</string>
-    <string name="female">Female</string>
     <string name="hint_password">Enter Password</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="forget_password">Forget Password?</string>
     <string name="sign_up">Sign Up</string>
-    <string name="login_with_gmail">Login With Gmail</string>
     <string name="gallery">Gallery</string>
-    <string name="image_classifier_failed">Image classifier failed to initialize. See error logs for details</string>
-    <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
+    <string name="empty_image_warning">Please select an image first</string>
     <string name="result">Result</string>
     <string name="camera">Camera</string>
-    <string name="time">Time</string>
+    <string name="email">Email</string>
+    <string name="profile_email">UserEmail@gmail.com</string>
+    <string name="profile_name">Username</string>
+    <string name="language_settings">Language Settings</string>
+    <string name="about">About</string>
+    <string name="contact">Contact Us</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="logout_success">Logout Success</string>
+    <string name="hello_user">Hello, User!</string>
+    <string name="lets_recycle">Let\'s Recycle</string>
+    <string name="category">Category</string>
+    <string name="appbar_sammy">Sammy</string>
+    <string name="back">Back</string>
+    <string name="tv_suggestion_label">You may want to ask:</string>
+    <string name="ib_send_label">Send Button</string>
+    <string name="tv_pick_topic_label">Choose a topic.</string>
+    <string name="tiet_question_label">Type in your question…</string>
+    <string name="fragment_qa_title">%s - Bert QA</string>
+    <string name="text_home_maps">Find the nearest collector location!</string>
+    <string-array name="data_photo">
+        <item>https://www.pngall.com/wp-content/uploads/5/Plastic-Bottle-PNG-High-Quality-Image.png</item>
+        <item>https://www.pngmart.com/files/11/Firewood-Wood-PNG-Clipart.png</item>
+        <item>https://freepngdesign.com/content/uploads/images/metal-can-6725860182.png</item>
+        <item>https://www.pngmart.com/files/10/Pile-Of-Autumn-Leaves-PNG-Photos.png</item>
+        <item>https://static.vecteezy.com/system/resources/previews/011/190/622/original/crumpled-paper-ball-png.png</item>
+        <item>https://www.pngmart.com/files/15/Empty-Glass-Water-Bottle-PNG-File.png</item>
+        <item>https://pngimg.com/uploads/box/box_PNG11.png</item>
+        <item>https://static.vecteezy.com/system/resources/previews/033/293/177/non_2x/food-waste-isolated-on-transparent-generative-ai-free-png.png</item>
+    </string-array>
+    <string-array name="data_name">
+        <item>Plastic</item>
+        <item>Wood</item>
+        <item>Metal</item>
+        <item>Leaf</item>
+        <item>Paper</item>
+        <item>Glass</item>
+        <item>Box</item>
+        <item>Leftover</item>
+
+    </string-array>
+
+    <string name="besi">Metal</string>
+    <string name="daun">Leaf</string>
+    <string name="kaca">Glass</string>
+    <string name="kardus">Cardboard</string>
+    <string name="kayu">Wood</string>
+    <string name="kertas">Paper</string>
+    <string name="plastik">Plastic</string>
+    <string name="sisa_makanan">Leftover</string>
+
+    <string name="desc_besi">Scrap metal refers to metal that has been used and no longer holds utility in its original form. It is typically recycled for use in creating new products such as household items, construction materials, and automotive parts. Recycling metal reduces the need for new mining and saves energy.</string>
+    <string name="desc_daun">Used leaves refer to fallen or cut plant leaves, typically discarded or used as compost. Dried leaves can be recycled into compost, which is useful for farming and garden management.</string>
+    <string name="desc_kaca">Used glass is a recyclable material that can be reused without compromising quality. This includes glass bottles, containers, and other glass items. Recycling glass reduces the need for silica sand and saves energy.</string>
+    <string name="desc_kardus">Used cardboard refers to packaging paper that is commonly used for shipping goods. Cardboard packaging can be recycled into new paper products. The recycling process of cardboard reduces waste and conserves raw materials.</string>
+    <string name="desc_kayu">Used wood comes from wood scraps or wood products that are no longer in use. Used wood can be recycled or reused in making furniture or construction materials, reducing the need for cutting down new trees.</string>
+    <string name="desc_kertas">Used paper refers to paper that has been used or discarded, which no longer has direct utility in its original form and is typically thrown away or recycled. Used paper can be recycled into various new paper products, reducing deforestation and saving energy.</string>
+    <string name="desc_plastik">Used plastic refers to plastic that has been used and is no longer needed. Used plastic can be recycled into various new products, but the process is often more complex due to the variety of plastic types.</string>
+    <string name="desc_sisa_makanan">Leftover is organic material that comes from food that has been consumed or discarded. Food waste can be used for compost or converted into bioenergy products, helping to reduce waste and improve soil fertility.</string>
+    <string name="result_label">%s %.2f%%</string>
+
+    <string name="add_address">Input Address</string>
+    <string name="radius">Radius (meters)</string>
+
+    <string name="must_fill">Please fill the fields</string>
+    <string name="must_fill_name">Please fill the name fields</string>
+    <string name="must_fill_email">Please fill the email fields</string>
+    <string name="must_fill_password">Please fill the password fields</string>
+    <string name="must_fill_password_confirm">Please fill the password confirmation fields</string>
+
+    <string name="maps_fail">No place available in this radius or wrong address</string>
+    <string name="get_my_location">Get My Location</string>
+    <string name="password_not_match">Passwords are not match</string>
+    <string name="location_permission_denied">Permission Denied</string>
+    <string name="signUp_login">Still no account? Sign Up here</string>
+    <string name="chat_scan">Have a question? Ask here!</string>
+    <string name="title">Title</string>
+    <string name="closest_place_recomendation">Closest Place Recomendation</string>
+    <string name="date">date</string>
+    <string name="history_scans">History Scans</string>
+    <string name="bukan_sampah">Not A Trash</string>
+    <string name="desc_bukan_sampah">-</string>
+    <string name="blank">b</string>
+    <string name="login_success">login success</string>
+    <string name="must_fill_address">must fill address and radius</string>
+    <string name="location_success">Success to get location</string>
+    <string name="must_fill_radius">Must Fill Radius</string>
+    <string name="failed_to_get_location">Failed to get location</string>
+    <string name="user_not_found">user not found</string>
+    <string name="failed_to_start_camera">Failed to start camera</string>
+    <string name="failed_to_take_picture">Failed to take picture</string>
+    <string name="failed_message">Sorry, I can\'t answer your question %1$s</string>
+    <string name="please_enter_the_question_first">Please enter the question first.</string>
+    <string name="initial_chat">Welcome! Feel free to ask %1$s</string>
+    <string name="scan_fragment">Scan Fragment</string>
+    <string name="confirm_exit_message">Are you sure to remove the scan progress?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="splash_title">Sampah.</string>
+    <string name="splash_title2">In</string>
+    <string name="about_us">About Us</string>
+    <string name="about_us_description">This App was made from our teams : \n\nM.Reihan Alif AD\nRizki Putra Ramadhan\nLaura Nur Meilindy\nFarhan Radhi Zuhri\nIka Widiyanti\nIffah Karimah\nWendy</string>
+    <string name="contact_description">"Email : CapstoneTeam@gmail.com \nPhone : +62 8123456788"</string>
+    <string name="logout_confirmation">Are You sure to sign out?</string>
+
+
 </resources>

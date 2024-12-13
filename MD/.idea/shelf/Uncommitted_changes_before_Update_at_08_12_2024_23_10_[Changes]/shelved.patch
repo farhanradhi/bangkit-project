@@ -1,0 +1,277 @@
+Index: app/build.gradle.kts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    alias(libs.plugins.android.application)\r\n    alias(libs.plugins.kotlin.android)\r\n    id(\"com.google.devtools.ksp\")\r\n    id(\"androidx.navigation.safeargs\")\r\n    id(\"kotlin-parcelize\")\r\n    alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)\r\n}\r\n\r\nandroid {\r\n    namespace = \"com.capstone.sampahin\"\r\n    compileSdk = 35\r\n\r\n    defaultConfig {\r\n        applicationId = \"com.capstone.sampahin\"\r\n        minSdk = 21\r\n        targetSdk = 34\r\n        versionCode = 1\r\n        versionName = \"1.0\"\r\n\r\n        testInstrumentationRunner = \"androidx.test.runner.AndroidJUnitRunner\"\r\n        buildConfigField (\"String\", \"BASE_URL\", \"\\\"https://firebase-851479113294.asia-southeast2.run.app/\\\"\")\r\n        buildConfigField (\"String\", \"ML_BASE_URL\", \"\\\"https://backend-ml-2-dot-sampahin.et.r.appspot.com/\\\"\")\r\n        buildConfigField (\"String\", \"MAP_BASE_URL\", \"\\\"https://places-nearby-851479113294.asia-southeast2.run.app/\\\"\")\r\n\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            isMinifyEnabled = false\r\n            proguardFiles(\r\n                getDefaultProguardFile(\"proguard-android-optimize.txt\"),\r\n                \"proguard-rules.pro\"\r\n            )\r\n        }\r\n    }\r\n    compileOptions {\r\n        sourceCompatibility = JavaVersion.VERSION_17\r\n        targetCompatibility = JavaVersion.VERSION_17\r\n    }\r\n    kotlinOptions {\r\n        jvmTarget = \"17\"\r\n    }\r\n    buildFeatures {\r\n        viewBinding = true\r\n        mlModelBinding = true\r\n        buildConfig = true\r\n    }\r\n}\r\n\r\ndependencies {\r\n\r\n    implementation(libs.androidx.core.ktx)\r\n    implementation(libs.androidx.appcompat)\r\n    implementation(libs.material)\r\n    implementation(libs.androidx.constraintlayout)\r\n    implementation(libs.androidx.lifecycle.livedata.ktx)\r\n    implementation(libs.androidx.lifecycle.viewmodel.ktx)\r\n    implementation(libs.androidx.navigation.fragment.ktx)\r\n    implementation(libs.androidx.navigation.ui.ktx)\r\n    implementation(libs.androidx.activity)\r\n    implementation(libs.play.services.maps)\r\n    testImplementation(libs.junit)\r\n    androidTestImplementation(libs.androidx.junit)\r\n    androidTestImplementation(libs.androidx.espresso.core)\r\n\r\n    implementation(libs.androidx.camera.camera2)\r\n    implementation(libs.androidx.camera.lifecycle)\r\n    implementation(libs.androidx.camera.view)\r\n\r\n    implementation(libs.androidx.lifecycle.runtime.ktx)\r\n    implementation(libs.logging.interceptor)\r\n    implementation(libs.retrofit)\r\n    implementation(libs.converter.gson)\r\n    implementation (libs.github.glide)\r\n\r\n    implementation(libs.tensorflow.lite.support)\r\n    implementation(libs.tensorflow.lite.metadata)\r\n    implementation(libs.tensorflow.lite.task.vision)\r\n\r\n    implementation(libs.androidx.datastore.preferences)\r\n    implementation(libs.kotlinx.coroutines.core)\r\n    implementation(libs.kotlinx.coroutines.android)\r\n\r\n    ksp(libs.androidx.room.compiler)\r\n    implementation(libs.androidx.room.ktx)\r\n    implementation(libs.gson)\r\n    implementation(libs.tensorflow.lite.task.text)\r\n    implementation(libs.tensorflow.lite.gpu)\r\n    implementation(libs.tensorflow.lite.gpu.delegate.plugin)\r\n\r\n    implementation (libs.ucrop)\r\n    implementation(libs.play.services.location)\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle.kts b/app/build.gradle.kts
+--- a/app/build.gradle.kts	(revision 889812d730707a429c4d7524e854f000a5264974)
++++ b/app/build.gradle.kts	(date 1733673806085)
+@@ -22,7 +22,14 @@
+         buildConfigField ("String", "BASE_URL", "\"https://firebase-851479113294.asia-southeast2.run.app/\"")
+         buildConfigField ("String", "ML_BASE_URL", "\"https://backend-ml-2-dot-sampahin.et.r.appspot.com/\"")
+         buildConfigField ("String", "MAP_BASE_URL", "\"https://places-nearby-851479113294.asia-southeast2.run.app/\"")
+-
++        externalNativeBuild {
++            cmake {
++                cppFlags += ""
++            }
++        }
++        manifestPlaceholders = [
++            MAPS_API_KEY; project.findProperty("MAPS_API_KEY") ?: ""
++        ]
+     }
+ 
+     buildTypes {
+@@ -46,6 +53,12 @@
+         mlModelBinding = true
+         buildConfig = true
+     }
++    externalNativeBuild {
++        cmake {
++            path = file("src/main/cpp/CMakeLists.txt")
++            version = "3.22.1"
++        }
++    }
+ }
+ 
+ dependencies {
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <bytecodeTargetLevel target=\"17\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 889812d730707a429c4d7524e854f000a5264974)
++++ b/.idea/compiler.xml	(date 1733671261389)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="CompilerConfiguration">
+-    <bytecodeTargetLevel target="17" />
++    <bytecodeTargetLevel target="21" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: app/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/AndroidManifest.xml b/app/AndroidManifest.xml
+new file mode 100644
+--- /dev/null	(date 1733673331775)
++++ b/app/AndroidManifest.xml	(date 1733673331775)
+@@ -0,0 +1,87 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools" >
++
++    <uses-feature android:name="android.hardware.camera" />
++
++    <uses-permission android:name="android.permission.CAMERA" />
++    <uses-permission android:name="android.permission.INTERNET" />
++    <uses-permission
++        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
++        android:maxSdkVersion="28" />
++    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
++    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
++
++    <application
++        android:allowBackup="true"
++        android:dataExtractionRules="@xml/data_extraction_rules"
++        android:enableOnBackInvokedCallback="true"
++        android:screenOrientation="portrait"
++        android:fullBackupContent="@xml/backup_rules"
++        android:icon="@mipmap/ic_launcher"
++        android:label="@string/app_name"
++        android:roundIcon="@mipmap/ic_launcher_round"
++        android:supportsRtl="true"
++        android:theme="@style/Theme.SampahIn"
++        tools:targetApi="tiramisu" >
++        <activity
++            android:name=".ui.profilemenu.settings.SettingsActivity"
++            android:exported="false"
++            android:screenOrientation="portrait"
++            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
++
++        <meta-data
++            android:name="com.google.android.geo.API_KEY"
++            android:value="${MAPS_API_KEY}" />
++
++        <activity
++            android:name=".ui.scan.CameraActivity"
++            android:exported="false"
++            android:screenOrientation="portrait"
++            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
++
++        <provider
++            android:name="androidx.core.content.FileProvider"
++            android:authorities="${applicationId}.fileprovider"
++            android:exported="false"
++            android:grantUriPermissions="true" >
++            <meta-data
++                android:name="android.support.FILE_PROVIDER_PATHS"
++                android:resource="@xml/file_paths" />
++        </provider>
++
++        <activity
++            android:name="com.yalantis.ucrop.UCropActivity"
++            android:theme="@style/Theme.Material3.DayNight.NoActionBar"
++            android:screenOrientation="portrait"
++            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
++        <activity
++            android:name=".ui.login.LoginActivity"
++            android:exported="false"
++            android:screenOrientation="portrait"
++            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
++        <activity
++            android:name=".ui.register.RegisterActivity"
++            android:exported="false"
++            android:screenOrientation="portrait"
++            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
++        <activity
++            android:name=".ui.MainActivity"
++            android:exported="false"
++            android:screenOrientation="portrait"
++            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
++
++        <activity
++            android:name=".ui.WelcomeActivity"
++            android:screenOrientation="portrait"
++            android:exported="true"
++            tools:ignore="DiscouragedApi,LockedOrientationActivity">
++            <intent-filter>
++                <action android:name="android.intent.action.MAIN" />
++                <category android:name="android.intent.category.LAUNCHER" />
++            </intent-filter>
++        </activity>
++
++    </application>
++
++</manifest>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project version=\"4\">\r\n  <component name=\"CodeInsightWorkspaceSettings\">\r\n    <option name=\"optimizeImportsOnTheFly\" value=\"true\" />\r\n  </component>\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" default=\"true\" project-jdk-name=\"jbr-17\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 889812d730707a429c4d7524e854f000a5264974)
++++ b/.idea/misc.xml	(date 1733671261434)
+@@ -3,7 +3,7 @@
+     <option name="optimizeImportsOnTheFly" value="true" />
+   </component>
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="jbr-21" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: .idea/deploymentTargetSelector.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"deploymentTargetSelector\">\r\n    <selectionStates>\r\n      <SelectionState runConfigName=\"app\">\r\n        <option name=\"selectionMode\" value=\"DROPDOWN\" />\r\n        <DropdownSelection timestamp=\"2024-12-06T12:41:27.985773300Z\">\r\n          <Target type=\"DEFAULT_BOOT\">\r\n            <handle>\r\n              <DeviceId pluginId=\"LocalEmulator\" identifier=\"path=C:\\Users\\user\\.android\\avd\\Copy_of_Pixel_4_API_34.avd\" />\r\n            </handle>\r\n          </Target>\r\n        </DropdownSelection>\r\n        <DialogSelection />\r\n      </SelectionState>\r\n    </selectionStates>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/deploymentTargetSelector.xml b/.idea/deploymentTargetSelector.xml
+--- a/.idea/deploymentTargetSelector.xml	(revision 889812d730707a429c4d7524e854f000a5264974)
++++ b/.idea/deploymentTargetSelector.xml	(date 1733671261562)
+@@ -4,14 +4,6 @@
+     <selectionStates>
+       <SelectionState runConfigName="app">
+         <option name="selectionMode" value="DROPDOWN" />
+-        <DropdownSelection timestamp="2024-12-06T12:41:27.985773300Z">
+-          <Target type="DEFAULT_BOOT">
+-            <handle>
+-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\user\.android\avd\Copy_of_Pixel_4_API_34.avd" />
+-            </handle>
+-          </Target>
+-        </DropdownSelection>
+-        <DialogSelection />
+       </SelectionState>
+     </selectionStates>
+   </component>
+Index: .idea/runConfigurations.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/runConfigurations.xml b/.idea/runConfigurations.xml
+new file mode 100644
+--- /dev/null	(date 1733671261652)
++++ b/.idea/runConfigurations.xml	(date 1733671261652)
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RunConfigurationProducerService">
++    <option name="ignoredProducers">
++      <set>
++        <option value="com.intellij.execution.junit.AbstractAllInDirectoryConfigurationProducer" />
++        <option value="com.intellij.execution.junit.AllInPackageConfigurationProducer" />
++        <option value="com.intellij.execution.junit.PatternConfigurationProducer" />
++        <option value="com.intellij.execution.junit.TestInClassConfigurationProducer" />
++        <option value="com.intellij.execution.junit.UniqueIdConfigurationProducer" />
++        <option value="com.intellij.execution.junit.testDiscovery.JUnitTestDiscoveryConfigurationProducer" />
++        <option value="org.jetbrains.kotlin.idea.junit.KotlinJUnitRunConfigurationProducer" />
++        <option value="org.jetbrains.kotlin.idea.junit.KotlinPatternConfigurationProducer" />
++      </set>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"#GRADLE_LOCAL_JAVA_HOME\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveExternalAnnotations\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 889812d730707a429c4d7524e854f000a5264974)
++++ b/.idea/gradle.xml	(date 1733671261715)
+@@ -4,6 +4,7 @@
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
++        <option name="testRunner" value="CHOOSE_PER_TEST" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+         <option name="modules">
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>*.iml\r\n.gradle\r\n/local.properties\r\n/.idea/caches\r\n/.idea/libraries\r\n/.idea/modules.xml\r\n/.idea/workspace.xml\r\n/.idea/navEditor.xml\r\n/.idea/assetWizardSettings.xml\r\n.DS_Store\r\n/build\r\n/captures\r\n.externalNativeBuild\r\n.cxx\r\nlocal.properties
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+--- a/.gitignore	(revision 889812d730707a429c4d7524e854f000a5264974)
++++ b/.gitignore	(date 1733672688273)
+@@ -12,4 +12,5 @@
+ /captures
+ .externalNativeBuild
+ .cxx
+-local.properties
+\ No newline at end of file
++local.properties
++/app/secrets.properties
+\ No newline at end of file
+Index: app/secrets.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/app/secrets.properties b/app/secrets.properties
+new file mode 100644
+--- /dev/null	(date 1733672516650)
++++ b/app/secrets.properties	(date 1733672516650)
+@@ -0,0 +1,1 @@
++MAPS_API_KEY=AlzaSyA4PPwzd5OUi_lCJmNmzBqOj1BPieszDfk
+\ No newline at end of file

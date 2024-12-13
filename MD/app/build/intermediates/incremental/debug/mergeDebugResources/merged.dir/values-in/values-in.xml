@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="data_name">
+        <item>Plastik</item>
+        <item>Kayu</item>
+        <item>Besi</item>
+        <item>Daun</item>
+        <item>Kertas</item>
+        <item>Kaca</item>
+        <item>Kardus</item>
+        <item>Sisa Makanan</item>
+    </string-array>
+    <string-array name="data_photo">
+        <item>https://www.pngall.com/wp-content/uploads/5/Plastic-Bottle-PNG-High-Quality-Image.png</item>
+        <item>https://www.pngmart.com/files/11/Firewood-Wood-PNG-Clipart.png</item>
+        <item>https://freepngdesign.com/content/uploads/images/metal-can-6725860182.png</item>
+        <item>https://www.pngmart.com/files/10/Pile-Of-Autumn-Leaves-PNG-Photos.png</item>
+        <item>https://static.vecteezy.com/system/resources/previews/011/190/622/original/crumpled-paper-ball-png.png</item>
+        <item>https://www.pngmart.com/files/15/Empty-Glass-Water-Bottle-PNG-File.png</item>
+        <item>https://pngimg.com/uploads/box/box_PNG11.png</item>
+        <item>https://static.vecteezy.com/system/resources/previews/033/293/177/non_2x/food-waste-isolated-on-transparent-generative-ai-free-png.png</item>
+    </string-array>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d notifikasi baru</item>
+    <item quantity="other">%d notifikasi baru</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Tunjukkan jalan ke rumah"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Kembali ke atas"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Opsi lainnya"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Selesai"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Lihat semua"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Pilih aplikasi"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"NONAKTIF"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AKTIF"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"spasi"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Telusuri..."</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Hapus kueri"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Telusuri kueri"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Telusuri"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Kirim kueri"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Penelusuran suara"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Bagikan dengan"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Bagikan dengan <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Ciutkan"</string>
+    <string name="about">Tentang</string>
+    <string name="about_us">Tentang Kami</string>
+    <string name="about_us_description">Aplikasi ini dibuat oleh tim kami : \n\nM.Reihan Alif AD\nRizki Putra Ramadhan\nLaura Nur Meilindy\nFarhan Radhi Zuhri\nIka Widiyanti\nIffah Karimah\nWendy</string>
+    <string name="add_address">Masukkan Alamat</string>
+    <string name="app_name">Sampah.In</string>
+    <string name="appbar_sammy">Sammy</string>
+    <string name="back">Kembali</string>
+    <string name="besi">Besi</string>
+    <string name="blank">Kosong</string>
+    <string name="bottomsheet_action_collapse">Menciutkan sheet bawah</string>
+    <string name="bottomsheet_action_expand">Meluaskan sheet bawah</string>
+    <string name="bottomsheet_action_expand_halfway">Luaskan setengah</string>
+    <string name="bottomsheet_drag_handle_clicked">Handel geser diketuk dua kali</string>
+    <string name="bottomsheet_drag_handle_content_description">Handel geser</string>
+    <string name="bukan_sampah">Bukan Sampah</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Jawab"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Tolak"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Tutup"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Panggilan masuk"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Panggilan sedang berlangsung"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Menyaring panggilan masuk"</string>
+    <string name="camera">Kamera</string>
+    <string name="category">Kategori</string>
+    <string name="character_counter_content_description">Karakter yang dimasukkan %1$d dari %2$d</string>
+    <string name="character_counter_overflowed_content_description">Melebihi batas karakter %1$d dari %2$d</string>
+    <string name="chat">Obrolan</string>
+    <string name="chat_scan">Ada pertanyaan? Tanyakan di sini!</string>
+    <string name="clear_text_end_icon_content_description">Menghapus teks</string>
+    <string name="closest_place_recomendation">Rekomendasi Tempat Terdekat</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Aktifkan</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s tidak akan berfungsi jika layanan Google Play tidak diaktifkan.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Aktifkan layanan Google Play</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Instal</string>
+    <string name="common_google_play_services_install_text">%1$s tidak akan berjalan tanpa layanan Google Play, yang tidak ada di perangkat Anda.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Dapatkan layanan Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Ketersediaan layanan Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Kesalahan layanan Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s mengalami masalah dengan layanan Google Play. Coba lagi.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s tidak akan berjalan tanpa layanan Google Play, yang tidak didukung oleh perangkat Anda.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s tidak akan berjalan jika layanan Google Play tidak diperbarui.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Perbarui layanan Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s tidak akan berjalan tanpa layanan Google Play, yang saat ini sedang diperbarui.</string>
+    <string name="common_google_play_services_wear_update_text">Perlu versi baru layanan Google Play. Akan segera memperbarui sendiri.</string>
+    <string name="common_open_on_phone">Buka di ponsel</string>
+    <string name="common_signin_button_text">Login</string>
+    <string name="common_signin_button_text_long">Login dengan Google</string>
+    <string name="confirm_exit_message">Apakah Anda yakin ingin menghapus progres pindaian?</string>
+    <string name="confirm_password">Konfirmasi Kata Sandi</string>
+    <string name="contact">Hubungi Kami</string>
+    <string name="contact_description">"Email : CapstoneTeam@gmail.com \nTelepon : +62 8123456788"</string>
+    <string name="create_an_account">Buat akun</string>
+    <string name="date">Tanggal</string>
+    <string name="daun">Daun</string>
+    <string name="desc_besi">Besi bekas merujuk pada logam yang telah digunakan dan tidak lagi berguna dalam bentuk aslinya. Biasanya didaur ulang untuk membuat produk baru seperti barang rumah tangga, bahan konstruksi, dan suku cadang otomotif. Daur ulang besi mengurangi kebutuhan untuk penambangan baru dan menghemat energi.</string>
+    <string name="desc_bukan_sampah">-</string>
+    <string name="desc_daun">Daun bekas merujuk pada daun tanaman yang jatuh atau dipotong, biasanya dibuang atau digunakan sebagai kompos. Daun yang sudah kering dapat didaur ulang menjadi kompos yang berguna untuk pertanian dan pengelolaan taman.</string>
+    <string name="desc_kaca">Kaca bekas adalah material yang dapat didaur ulang yang dapat digunakan kembali tanpa mengurangi kualitasnya. Ini termasuk botol kaca, wadah, dan barang-barang kaca lainnya. Daur ulang kaca mengurangi kebutuhan pasir silika dan menghemat energi.</string>
+    <string name="desc_kardus">Kardus bekas merujuk pada kemasan kertas yang biasa digunakan untuk mengirim barang. Kemasan kardus dapat didaur ulang menjadi produk kertas baru. Proses daur ulang kardus mengurangi sampah dan menghemat bahan baku.</string>
+    <string name="desc_kayu">Kayu bekas berasal dari potongan kayu atau produk kayu yang tidak lagi digunakan. Kayu bekas dapat didaur ulang atau digunakan kembali untuk membuat furnitur atau bahan konstruksi, mengurangi kebutuhan untuk menebang pohon baru.</string>
+    <string name="desc_kertas">Kertas bekas merujuk pada kertas yang telah digunakan atau dibuang, yang tidak lagi memiliki kegunaan langsung dalam bentuk aslinya dan biasanya dibuang atau didaur ulang. Kertas bekas dapat didaur ulang menjadi berbagai produk kertas baru, mengurangi penebangan pohon dan menghemat energi.</string>
+    <string name="desc_plastik">Plastik bekas merujuk pada plastik yang telah digunakan dan tidak lagi dibutuhkan. Plastik bekas dapat didaur ulang menjadi berbagai produk baru, tetapi prosesnya sering lebih kompleks karena berbagai jenis plastik.</string>
+    <string name="desc_sisa_makanan">Sisa makanan adalah material organik yang berasal dari makanan yang telah dikonsumsi atau dibuang. Sisa makanan dapat digunakan untuk kompos atau diubah menjadi produk bioenergi, membantu mengurangi sampah dan meningkatkan kesuburan tanah.</string>
+    <string name="email">Email</string>
+    <string name="email_format">Format Email Salah</string>
+    <string name="empty_image_warning">Pilih gambar terlebih dahulu</string>
+    <string name="error_a11y_label">Error: tidak valid</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="exposed_dropdown_menu_content_description">Tampilkan menu dropdown</string>
+    <string name="failed_message">Maaf, saya tidak bisa menjawab pertanyaan Anda %1$s</string>
+    <string name="failed_to_get_location">Gagal mendapatkan lokasi</string>
+    <string name="failed_to_start_camera">Gagal memulai kamera</string>
+    <string name="failed_to_take_picture">Gagal mengambil gambar</string>
+    <string name="fragment_qa_title">%s - Bert QA</string>
+    <string name="gallery">Galeri</string>
+    <string name="get_my_location">Dapatkan Lokasi Saya</string>
+    <string name="hello_user">Halo, Pengguna!</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_name">Nama</string>
+    <string name="hint_password">Masukkan Kata Sandi</string>
+    <string name="history_scans">Riwayat Pindaian</string>
+    <string name="ib_send_label">Tombol Kirim</string>
+    <string name="icon_content_description">Ikon Dialog</string>
+    <string name="initial_chat">Selamat datang! Jangan ragu untuk bertanya %1$s</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="kaca">Kaca</string>
+    <string name="kardus">Kardus</string>
+    <string name="kayu">Kayu</string>
+    <string name="kertas">Kertas</string>
+    <string name="language_settings">Pengaturan Bahasa</string>
+    <string name="lets_recycle">Mari Daur Ulang</string>
+    <string name="location_permission_denied">Izin Ditolak</string>
+    <string name="location_success">Berhasil mendapatkan lokasi</string>
+    <string name="login">Masuk</string>
+    <string name="login_success">Masuk Berhasil</string>
+    <string name="login_title">Masuk dengan email Anda</string>
+    <string name="logout_confirmation">Apakah Anda yakin ingin keluar?</string>
+    <string name="logout_success">Berhasil Keluar</string>
+    <string name="maps">Peta</string>
+    <string name="maps_fail">Tidak ada tempat yang tersedia dalam radius ini atau alamat salah</string>
+    <string name="material_clock_toggle_content_description">Pilih AM atau PM</string>
+    <string name="material_hour_24h_suffix">%1$s jam</string>
+    <string name="material_hour_selection">Pilih jam</string>
+    <string name="material_hour_suffix">Pukul %1$s</string>
+    <string name="material_minute_selection">Pilih menit</string>
+    <string name="material_minute_suffix">%1$s menit</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Beralih ke mode jam untuk masukan waktu.</string>
+    <string name="material_timepicker_hour">Jam</string>
+    <string name="material_timepicker_minute">Menit</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Pilih waktu</string>
+    <string name="material_timepicker_text_input_mode_description">Beralih ke mode masukan teks untuk masukan waktu.</string>
+    <string name="mtrl_badge_numberless_content_description">Notifikasi baru</string>
+    <string name="mtrl_checkbox_state_description_checked">Dicentang</string>
+    <string name="mtrl_checkbox_state_description_indeterminate">Dicentang sebagian</string>
+    <string name="mtrl_checkbox_state_description_unchecked">Tidak dicentang</string>
+    <string name="mtrl_chip_close_icon_content_description">Menghapus %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Lebih dari %1$d notifikasi baru</string>
+    <string name="mtrl_picker_a11y_next_month">Ubah ke bulan berikutnya</string>
+    <string name="mtrl_picker_a11y_prev_month">Ubah ke bulan sebelumnya</string>
+    <string name="mtrl_picker_announce_current_range_selection">Pemilihan tanggal mulai: %1$s – Pemilihan tanggal akhir: %2$s</string>
+    <string name="mtrl_picker_announce_current_selection">Pilihan saat ini: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">tidak ada</string>
+    <string name="mtrl_picker_cancel">Batal</string>
+    <string name="mtrl_picker_confirm">Oke</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Pilih Tanggal</string>
+    <string name="mtrl_picker_date_header_unselected">Tanggal yang dipilih</string>
+    <string name="mtrl_picker_day_of_week_column_header">%1$s</string>
+    <string name="mtrl_picker_end_date_description">Tanggal akhir %1$s</string>
+    <string name="mtrl_picker_invalid_format">Format tidak valid.</string>
+    <string name="mtrl_picker_invalid_format_example">Contoh: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Gunakan: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Rentang tidak valid.</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Pilih tahun ini %1$d</string>
+    <string name="mtrl_picker_navigate_to_year_description">Buka tahun %1$d</string>
+    <string name="mtrl_picker_out_of_range">Di luar rentang: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Tanggal mulai – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Tanggal akhir</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Pilih Rentang</string>
+    <string name="mtrl_picker_range_header_unselected">Tanggal mulai – Tanggal akhir</string>
+    <string name="mtrl_picker_save">Simpan</string>
+    <string name="mtrl_picker_start_date_description">Tanggal mulai %1$s</string>
+    <string name="mtrl_picker_text_input_date_hint">Tanggal</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Tanggal akhir</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Tanggal mulai</string>
+    <string name="mtrl_picker_text_input_day_abbr">h</string>
+    <string name="mtrl_picker_text_input_month_abbr">b</string>
+    <string name="mtrl_picker_text_input_year_abbr">t</string>
+    <string name="mtrl_picker_today_description">Hari ini %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Beralih ke mode masukan kalender</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Ketuk untuk beralih ke tampilan Kalender</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Beralih ke mode masukan teks</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Ketuk untuk beralih ke tampilan tahun</string>
+    <string name="mtrl_timepicker_cancel">Batal</string>
+    <string name="mtrl_timepicker_confirm">Oke</string>
+    <string name="must_fill">Harap isi kolom yang kosong</string>
+    <string name="must_fill_address">Harus mengisi alamat dan radius</string>
+    <string name="must_fill_email">Harap isi kolom email</string>
+    <string name="must_fill_name">Harap isi kolom nama</string>
+    <string name="must_fill_password">Harap isi kolom kata sandi</string>
+    <string name="must_fill_password_confirm">Harap isi kolom konfirmasi kata sandi</string>
+    <string name="must_fill_radius">Harus mengisi radius</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Kembali ke atas"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Buka panel navigasi"</string>
+    <string name="no">Tidak</string>
+    <string name="or">atau</string>
+    <string name="password">Kata Sandi</string>
+    <string name="password_min_character">Kata sandi harus memiliki setidaknya 8 karakter</string>
+    <string name="password_not_match">Kata sandi tidak cocok</string>
+    <string name="password_toggle_content_description">Tampilkan sandi</string>
+    <string name="plastik">Plastik</string>
+    <string name="please_enter_the_question_first">Harap masukkan pertanyaan terlebih dahulu.</string>
+    <string name="profile">Profil</string>
+    <string name="profile_email">UserEmail@gmail.com</string>
+    <string name="profile_name">Nama Pengguna</string>
+    <string name="radius">Radius (meter)</string>
+    <string name="register">Daftar</string>
+    <string name="result">Hasil</string>
+    <string name="result_label">%s %.2f%%</string>
+    <string name="scan">Pindai</string>
+    <string name="scan_fragment">Fragmen Pindaian</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Telusuri"</string>
+    <string name="searchview_clear_text_content_description">Hapus teks</string>
+    <string name="searchview_navigation_content_description">Kembali</string>
+    <string name="side_sheet_accessibility_pane_title">Sheet Samping</string>
+    <string name="signUp_login">Belum punya akun? Daftar di sini</string>
+    <string name="sign_out">Keluar</string>
+    <string name="sign_up">Daftar</string>
+    <string name="sign_up_title">Daftar dengan email Anda</string>
+    <string name="sisa_makanan">Sisa Makanan</string>
+    <string name="splash_title">Sampah.</string>
+    <string name="splash_title2">In</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="text_home_maps">Temukan lokasi pengumpul terdekat!</string>
+    <string name="tiet_question_label">Ketikkan pertanyaan Anda…</string>
+    <string name="title">Judul</string>
+    <string name="title_home">Beranda</string>
+    <string name="tv_pick_topic_label">Pilih topik.</string>
+    <string name="tv_suggestion_label">Anda mungkin ingin bertanya:</string>
+    <string name="ucrop_crop">Pangkas</string>
+    <string name="ucrop_label_edit_photo">Edit Foto</string>
+    <string name="ucrop_label_original">Asli</string>
+    <string name="ucrop_menu_crop">Pangkas</string>
+    <string name="ucrop_rotate">Memutar</string>
+    <string name="ucrop_scale">Skala</string>
+    <string name="user_not_found">Pengguna tidak ditemukan</string>
+    <string name="welcome">Selamat datang</string>
+    <string name="welcome_desc">Kelola sampah untuk kehidupan yang lebih baik!</string>
+    <string name="yes">Ya</string>
+</resources>

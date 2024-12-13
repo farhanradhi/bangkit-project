@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\fragment_maps.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\fragment_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\fragment_scan.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\fragment_scan.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\activity_camera.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\activity_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\item_topic.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\item_topic.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\item_category.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\activity_history.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\activity_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\item_message_local.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\item_message_local.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\item_message_another_user.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\item_message_another_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\place_layout.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\place_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\activity_welcome.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\item_question_suggestion.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\item_question_suggestion.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\history_layout.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\history_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\fragment_chat.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\fragment_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "com.capstone.sampahin.app-mergeDebugResources-66:/layout/fragment_profile.xml",
+        "source": "com.capstone.sampahin.app-main-69:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-mergeDebugResources-66:\\layout\\fragment_topics.xml",
+        "source": "C:\\Users\\Marrr\\.gradle\\daemon\\8.7\\com.capstone.sampahin.app-main-69:\\layout\\fragment_topics.xml"
+    },
+    {
+        "merged": "com.capstone.sampahin.app-mergeDebugResources-66:/layout/activity_splash.xml",
+        "source": "com.capstone.sampahin.app-main-69:/layout/activity_splash.xml"
+    }
+]

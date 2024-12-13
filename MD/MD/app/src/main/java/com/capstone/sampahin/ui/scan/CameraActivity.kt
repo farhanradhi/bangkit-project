@@ -91,7 +91,7 @@ class CameraActivity : AppCompatActivity() {
             val preview = Preview.Builder()
                 .build()
                 .also {
-                    it.setSurfaceProvider(binding.viewFinder.surfaceProvider)
+                    it.surfaceProvider = binding.viewFinder.surfaceProvider
                 }
 
             imageCapture = ImageCapture.Builder().build()
@@ -105,7 +105,7 @@ class CameraActivity : AppCompatActivity() {
                     imageCapture
                 )
             } catch (exc: Exception) {
-                Toast.makeText(this, "Failed to start camera", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.failed_to_start_camera), Toast.LENGTH_SHORT).show()
                 Log.e(TAG, "start Camera: ${exc.message}")
             }
         }, ContextCompat.getMainExecutor(this))
@@ -130,7 +130,8 @@ class CameraActivity : AppCompatActivity() {
                 }
 
                 override fun onError(exc: ImageCaptureException) {
-                    Toast.makeText(this@CameraActivity, "Failed to take picture", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@CameraActivity,
+                        getString(R.string.failed_to_take_picture), Toast.LENGTH_SHORT).show()
                     Log.e(TAG, "onError: ${exc.message}")
                 }
             }
