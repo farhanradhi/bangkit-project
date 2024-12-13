@@ -1,5 +1,0 @@
-flask
-firebase-admin
-pyjwt
-werkzeug
-google-auth
