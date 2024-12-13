@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundColor">#121212</color>
+    <color name="black">#FF000000</color>
+    <color name="black_transparent">#80000000</color>
+    <color name="bottomBarActiveColor">#66CC33</color>
+    <color name="bottomBarInactiveColor">#888888</color>
+    <color name="gray">#DBDBDB</color>
+    <color name="primaryColor">#4CAF50</color>
+    <color name="red">#FF0000</color>
+    <color name="secondaryColor">#98CE00</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="textColorSecondary">#999999</color>
+    <color name="white">#FFFFFFFF</color>
+    <style name="ActiveTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/primaryColor</item>
+    </style>
+    <style name="Base.Theme.SampahIn" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="android:colorBackground">@color/backgroundColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+    <style name="ButtonGreen">
+        <item name="cornerRadius">8dp</item>
+        <item name="android:backgroundTint">@color/primaryColor</item>
+        <item name="android:textColor">@color/backgroundColor</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+    <style name="ButtonWhite">
+        <item name="cornerRadius">8dp</item>
+        <item name="android:backgroundTint">@color/backgroundColor</item>
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">@color/primaryColor</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+    <style name="InactiveTextStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+    <style name="Theme.SampahIn" parent="Base.Theme.SampahIn"/>
+</resources>

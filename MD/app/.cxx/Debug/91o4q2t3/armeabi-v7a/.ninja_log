@@ -1,0 +1,13 @@
+# ninja log v5
+0	168	7553837705542629	CMakeFiles/sampahin.dir/sampahin.cpp.o	8fd1948ab5396ccf
+168	1582	7553837719520248	E:/Iffah/SampahIn/app/build/intermediates/cxx/Debug/91o4q2t3/obj/armeabi-v7a/libsampahin.so	db1f891d6e46f957
+0	13	0	clean	14ce64ed1c8355aa
+1	198	7554149315571432	CMakeFiles/sampahin.dir/sampahin.cpp.o	8fd1948ab5396ccf
+199	1851	7554149326323140	E:/Iffah/SampahIn/app/build/intermediates/cxx/Debug/91o4q2t3/obj/armeabi-v7a/libsampahin.so	db1f891d6e46f957
+1	96	0	clean	14ce64ed1c8355aa
+0	24	0	clean	14ce64ed1c8355aa
+2	539	7554277057252456	CMakeFiles/sampahin.dir/sampahin.cpp.o	8fd1948ab5396ccf
+539	1305	7554277064433810	E:/Iffah/SampahIn/app/build/intermediates/cxx/Debug/91o4q2t3/obj/armeabi-v7a/libsampahin.so	db1f891d6e46f957
+0	25	0	clean	14ce64ed1c8355aa
+1	105	7554277952567449	CMakeFiles/sampahin.dir/sampahin.cpp.o	8fd1948ab5396ccf
+106	382	7554277955300165	E:/Iffah/SampahIn/app/build/intermediates/cxx/Debug/91o4q2t3/obj/armeabi-v7a/libsampahin.so	db1f891d6e46f957

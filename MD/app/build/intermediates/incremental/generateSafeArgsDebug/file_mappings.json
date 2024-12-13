@@ -1,0 +1,1 @@
+[{"navFile":"src\\main\\res\\navigation\\mobile_navigation.xml","javaFiles":["com.capstone.sampahin.ui.home.HomeFragmentDirections","com.capstone.sampahin.ui.chat.ChatFragmentArgs","com.capstone.sampahin.ui.chat.TopicsFragmentDirections","com.capstone.sampahin.ui.scan.ScanFragmentDirections"]}]
